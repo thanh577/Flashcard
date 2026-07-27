@@ -20,9 +20,26 @@ GOLD = "#ffd700"
 BG_CORRECT = "#1a3a1a"
 BG_WRONG = "#3a1a1a"
 
-# Widget desktop trong suốt — nền có alpha thấp để thấy rõ desktop phía sau
-WIDGET_BG = "rgba(26, 26, 46, 165)"
-WIDGET_BORDER = "rgba(136, 136, 170, 190)"
+# Widget desktop trong suốt — màu nền/viền gốc (chưa gồm alpha, alpha tính
+# động theo mức "độ trong suốt" người dùng chọn trong Cài đặt)
+WIDGET_BG_RGB = (26, 26, 46)
+WIDGET_BORDER_RGB = (136, 136, 170)
+
+
+def widget_panel_colors(transparency_pct=35):
+    """Tính màu nền/viền dạng rgba(...) theo % độ trong suốt (0=đục hoàn
+    toàn, 90=rất trong suốt). Có sàn tối thiểu alpha=25 để không bao giờ
+    biến mất hoàn toàn (không thấy được viền/chữ nữa)."""
+    t = max(0, min(90, transparency_pct))
+    bg_alpha = max(25, round(255 * (1 - t / 100)))
+    border_alpha = max(30, round(230 * (1 - t / 100)))
+    bg = f"rgba({WIDGET_BG_RGB[0]}, {WIDGET_BG_RGB[1]}, {WIDGET_BG_RGB[2]}, {bg_alpha})"
+    border = f"rgba({WIDGET_BORDER_RGB[0]}, {WIDGET_BORDER_RGB[1]}, {WIDGET_BORDER_RGB[2]}, {border_alpha})"
+    return bg, border
+
+# Giữ 2 hằng số cũ (mức trong suốt mặc định 35%) để không phá vỡ chỗ nào lỡ
+# import trực tiếp — nhưng ui/desktop_widget.py giờ dùng widget_panel_colors()
+WIDGET_BG, WIDGET_BORDER = widget_panel_colors(35)
 
 FONT_XS = "14px"
 FONT_SM = "18px"

@@ -200,6 +200,7 @@ class FlashCard(QWidget):
             self.front = False
             self.label.setText(self._format_back(self.data))
             self.practice_widget.setVisible(False)
+            self.btn_linux_next.setVisible(False)
         else:
             self._show_front()
 

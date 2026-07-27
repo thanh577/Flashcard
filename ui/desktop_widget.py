@@ -2,7 +2,7 @@
 from PyQt6.QtWidgets import QWidget, QLabel, QMenu, QGraphicsDropShadowEffect
 from PyQt6.QtCore import Qt, QTimer
 from PyQt6.QtGui import QColor, QGuiApplication, QAction, QCursor, QFont
-from core.theme import WIDGET_BG, WIDGET_BORDER, FG2
+from core.theme import widget_panel_colors, FG2
 from ui.explain_dialog import CMDS
 
 DEFAULT_WIDTH, DEFAULT_HEIGHT = 460, 460
@@ -43,11 +43,7 @@ class DesktopWidget(QWidget):
         self._moved_past_threshold = False
         self._resizing = False
 
-        self.setWindowFlags(
-            Qt.WindowType.FramelessWindowHint
-            | Qt.WindowType.WindowStaysOnTopHint
-            | Qt.WindowType.Tool
-        )
+        self.setWindowFlags(self._window_flags())
         self.setAttribute(Qt.WidgetAttribute.WA_TranslucentBackground, True)
         self.setAttribute(Qt.WidgetAttribute.WA_NoSystemBackground, True)
         self.setMouseTracking(True)
@@ -58,13 +54,7 @@ class DesktopWidget(QWidget):
 
         self.panel = QWidget(self)
         self.panel.setObjectName("desktop_widget_panel")
-        self.panel.setStyleSheet(
-            f"#desktop_widget_panel {{"
-            f"background-color: {WIDGET_BG};"
-            f"border: 1px solid {WIDGET_BORDER};"
-            f"border-radius: 16px;"
-            f"}}"
-        )
+        self._apply_panel_style()
         # Panel + các label con phải "trong suốt với chuột" để mọi thao tác
         # (kéo di chuyển, kéo giãn, click đổi thẻ) đều tới được các hàm xử lý
         # chuột của chính DesktopWidget — nếu không, bấm trúng vùng chữ sẽ
@@ -146,6 +136,24 @@ class DesktopWidget(QWidget):
     def _save_size(self):
         self.storage.config["widget_size"] = [self.width(), self.height()]
         self.storage.save_config()
+
+    # ---------- giao diện: trong suốt + luôn-trên-cùng (đổi được trong Cài đặt) ----------
+    def _window_flags(self):
+        flags = Qt.WindowType.FramelessWindowHint | Qt.WindowType.Tool
+        if self.storage.config.get("widget_always_on_top", True):
+            flags |= Qt.WindowType.WindowStaysOnTopHint
+        return flags
+
+    def _apply_panel_style(self):
+        transparency = self.storage.config.get("widget_transparency", 35)
+        bg, border = widget_panel_colors(transparency)
+        self.panel.setStyleSheet(
+            f"#desktop_widget_panel {{"
+            f"background-color: {bg};"
+            f"border: 1px solid {border};"
+            f"border-radius: 16px;"
+            f"}}"
+        )
 
     # ---------- hẹn giờ đổi thẻ ----------
     def _restart_timer(self):
@@ -358,5 +366,22 @@ class DesktopWidget(QWidget):
         self._save_position()
 
     def apply_settings(self):
-        """Gọi lại sau khi đổi cài đặt (khoảng thời gian đổi thẻ...)."""
+        """Gọi lại sau khi đổi cài đặt (khoảng thời gian đổi thẻ, độ trong
+        suốt, luôn-trên-cùng...)."""
         self._restart_timer()
+        self._apply_panel_style()
+
+        # Đổi windowFlags trên 1 cửa sổ ĐANG HIỆN đôi khi không đủ để Windows
+        # thực sự cập nhật thuộc tính "topmost" ở tầng hệ điều hành — dù gọi
+        # setWindowFlags() xong show() lại, cửa sổ có thể vẫn giữ trạng thái
+        # topmost cũ (từng gặp vấn đề tương tự với việc kéo thả trước đây).
+        # Cách chắc chắn hơn: ẩn hẳn cửa sổ trước, để Qt/hệ điều hành thực sự
+        # phá huỷ và tạo lại cửa sổ với cờ mới, rồi mới hiện lại.
+        was_visible = self.isVisible()
+        pos, size = self.pos(), self.size()
+        self.hide()
+        self.setWindowFlags(self._window_flags())
+        self.resize(size)
+        self.move(pos)
+        if was_visible:
+            self.show()

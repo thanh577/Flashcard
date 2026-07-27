@@ -4,6 +4,9 @@ import os
 import tempfile
 import threading
 import shutil
+import logging
+
+logger = logging.getLogger(__name__)
 
 _PLAYERS = ["mpv", "ffplay", "aplay", "paplay"]
 
@@ -51,9 +54,14 @@ def _speak_sync(text, lang):
                     if player:
                         subprocess.run([player, tmp],
                                        stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                    else:
+                        logger.warning("edge-tts tạo file OK nhưng không có trình phát nào (mpv/ffplay/aplay/paplay)")
                     _try_remove(tmp)
                     return
-            except:
+                logger.warning("edge-tts thất bại: returncode=%s, stderr=%s",
+                               r.returncode, r.stderr.decode(errors="replace")[:200])
+            except Exception as e:
+                logger.warning("edge-tts lỗi: %s", e)
                 _try_remove(tmp)
 
         if _is_installed("gtts-cli"):
@@ -67,9 +75,13 @@ def _speak_sync(text, lang):
                     if player:
                         subprocess.run([player, tmp],
                                        stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                    else:
+                        logger.warning("gtts-cli tạo file OK nhưng không có trình phát nào")
                     _try_remove(tmp)
                     return
-            except:
+                logger.warning("gtts-cli thất bại: returncode=%s", r.returncode)
+            except Exception as e:
+                logger.warning("gtts-cli lỗi: %s", e)
                 _try_remove(tmp)
 
         if _is_installed("espeak-ng"):
@@ -81,12 +93,15 @@ def _speak_sync(text, lang):
         if _is_installed("espeak"):
             subprocess.run(["espeak", text],
                            stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-    except:
-        pass
+            return
+
+        logger.warning("Không tìm thấy công cụ TTS nào (edge-tts/gtts-cli/espeak-ng/espeak) cho: %r", text[:50])
+    except Exception as e:
+        logger.error("Lỗi không xác định khi phát âm '%s': %s", text[:50], e)
 
 def _try_remove(path):
     try:
         if os.path.isfile(path):
             os.remove(path)
-    except:
-        pass
+    except Exception as e:
+        logger.debug("Không xoá được file tạm %s: %s", path, e)

@@ -1,6 +1,7 @@
 
 from PyQt6.QtWidgets import (QDialog, QVBoxLayout, QHBoxLayout, QCheckBox,
-                             QLabel, QSpinBox, QPushButton, QGroupBox, QLineEdit)
+                             QLabel, QSpinBox, QPushButton, QGroupBox, QLineEdit,
+                             QSlider)
 from PyQt6.QtCore import Qt
 
 class SettingsDialog(QDialog):
@@ -66,6 +67,23 @@ class SettingsDialog(QDialog):
         interval_row.addWidget(self.spin_widget_interval)
         interval_row.addStretch()
         widget_layout.addLayout(interval_row)
+
+        transparency_row = QHBoxLayout()
+        self.lbl_transparency = QLabel()
+        self.slider_transparency = QSlider(Qt.Orientation.Horizontal)
+        self.slider_transparency.setRange(0, 90)
+        self.slider_transparency.setValue(storage.config.get("widget_transparency", 35))
+        self._update_transparency_label(self.slider_transparency.value())
+        self.slider_transparency.valueChanged.connect(self._update_transparency_label)
+        transparency_row.addWidget(QLabel("Độ trong suốt:"))
+        transparency_row.addWidget(self.slider_transparency)
+        transparency_row.addWidget(self.lbl_transparency)
+        widget_layout.addLayout(transparency_row)
+
+        self.cb_always_on_top = QCheckBox("Luôn hiện trên cùng (Always on Top)")
+        self.cb_always_on_top.setChecked(storage.config.get("widget_always_on_top", True))
+        widget_layout.addWidget(self.cb_always_on_top)
+
         widget_group.setLayout(widget_layout)
         layout.addWidget(widget_group)
 
@@ -106,6 +124,9 @@ class SettingsDialog(QDialog):
 
         self.setLayout(layout)
 
+    def _update_transparency_label(self, value):
+        self.lbl_transparency.setText(f"{value}%")
+
     def _save(self):
         sources = []
         if self.cb_english.isChecked(): sources.append("english")
@@ -117,6 +138,8 @@ class SettingsDialog(QDialog):
         self.storage.config["default_interval"] = self.spin_interval.value()
         self.storage.config["desktop_widget_enabled"] = self.cb_widget.isChecked()
         self.storage.config["widget_interval_minutes"] = self.spin_widget_interval.value()
+        self.storage.config["widget_transparency"] = self.slider_transparency.value()
+        self.storage.config["widget_always_on_top"] = self.cb_always_on_top.isChecked()
         self.storage.config["groq_api_key"] = self.ai_key_input.text().strip()
         self.storage.config["auto_start"] = self.cb_autostart.isChecked()
         self.storage.save_config()

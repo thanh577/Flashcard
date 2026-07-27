@@ -1,7 +1,7 @@
 
 import os
 from PyQt6.QtWidgets import (QWidget, QVBoxLayout, QHBoxLayout, QLabel,
-                             QPushButton, QSystemTrayIcon, QMenu)
+                             QPushButton, QSystemTrayIcon, QMenu, QProgressBar)
 from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QShortcut, QKeySequence, QIcon, QAction
 from ui.flashcard import FlashCard
@@ -70,6 +70,11 @@ class MainWindow(QWidget):
 
         self.card = FlashCard(self._speak, self._toggle_favorite, self._on_card_answer)
 
+        self.progress_bar = QProgressBar()
+        self.progress_bar.setObjectName("progress_bar")
+        self.progress_bar.setTextVisible(True)
+        self.progress_bar.setRange(0, 100)
+
         self.status = QLabel()
         self.status.setObjectName("status_label")
         self.status.setAlignment(Qt.AlignmentFlag.AlignCenter)
@@ -82,6 +87,7 @@ class MainWindow(QWidget):
         layout.addLayout(top)
         layout.addLayout(tools)
         layout.addWidget(self.card)
+        layout.addWidget(self.progress_bar)
         layout.addWidget(self.status)
         layout.addWidget(self.tracking)
         self.setLayout(layout)
@@ -235,6 +241,15 @@ class MainWindow(QWidget):
         today = str(datetime.date.today())
         due = sum(1 for c in self.storage.cards if c["next_review"] <= today)
         self.status.setText(f"📚 {total} thẻ  ·  📅 Cần ôn: {due}")
+
+        # Progress bar: tỉ lệ đã ôn xong trong số cần ôn HÔM NAY (đã ôn +
+        # còn lại) — reset về 0% mỗi ngày mới, đầy 100% khi hết thẻ cần ôn.
+        today_reviews = sum(1 for r in self.storage.get_review_log(days=2)
+                            if r["reviewed_at"][:10] == today)
+        total_today = today_reviews + due
+        pct = int(today_reviews / total_today * 100) if total_today > 0 else 100
+        self.progress_bar.setValue(pct)
+        self.progress_bar.setFormat(f"Hôm nay: {today_reviews}/{total_today} (%p%)")
 
         learned = sum(1 for c in self.storage.cards if c["next_review"] > "2000-01-10")
         streak = calc_streak(self.storage.get_review_log(365))

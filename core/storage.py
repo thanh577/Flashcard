@@ -2,12 +2,16 @@
 import sqlite3
 import json
 import os
+import shutil
+import glob
+import datetime
 import logging
 from core.paths import resource_path, user_data_dir
 
 logger = logging.getLogger(__name__)
 
 DB_FILENAME = "flashcard.db"
+BACKUP_KEEP = 5  # chỉ giữ lại 5 bản sao lưu gần nhất, tránh tích tụ vô hạn
 
 class Storage:
     def __init__(self):
@@ -16,10 +20,34 @@ class Storage:
         self._config_path = os.path.join(data_dir, "config.json")
 
         self._init_db()
+        self._backup_db()
         self._seed_from_json()
 
         self.config = self._load_config()
         self.cards = self._load_cards()
+
+    def _backup_db(self):
+        """Sao lưu flashcard.db mỗi lần mở app — nếu DB bị lỗi/hỏng ở phiên
+        sau, vẫn còn bản backup gần nhất để khôi phục thủ công (đổi tên file
+        backup thành flashcard.db). Tự động chỉ giữ BACKUP_KEEP bản gần nhất,
+        không tích tụ vô hạn theo thời gian."""
+        if not os.path.exists(self._db_path):
+            return  # máy mới, chưa có gì để sao lưu
+        try:
+            backup_dir = os.path.join(os.path.dirname(self._db_path), "backups")
+            os.makedirs(backup_dir, exist_ok=True)
+            ts = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+            backup_path = os.path.join(backup_dir, f"flashcard_{ts}.db")
+            shutil.copy2(self._db_path, backup_path)
+
+            existing = sorted(glob.glob(os.path.join(backup_dir, "flashcard_*.db")))
+            for old in existing[:-BACKUP_KEEP]:
+                try:
+                    os.remove(old)
+                except Exception:
+                    pass
+        except Exception as e:
+            logger.warning("Sao lưu DB thất bại (không ảnh hưởng hoạt động chính): %s", e)
 
     def _conn(self):
         conn = sqlite3.connect(self._db_path)
@@ -32,6 +60,14 @@ class Storage:
         try:
             try:
                 conn.execute("ALTER TABLE cards ADD COLUMN options TEXT DEFAULT ''")
+            except Exception:
+                pass
+            try:
+                conn.execute("ALTER TABLE cards ADD COLUMN ease_factor REAL DEFAULT 2.5")
+            except Exception:
+                pass
+            try:
+                conn.execute("ALTER TABLE cards ADD COLUMN repetitions INTEGER DEFAULT 0")
             except Exception:
                 pass
 
@@ -47,6 +83,8 @@ class Storage:
                     example_pronunciation TEXT DEFAULT '',
                     options     TEXT DEFAULT '',
                     interval    INTEGER DEFAULT 1,
+                    ease_factor REAL DEFAULT 2.5,
+                    repetitions INTEGER DEFAULT 0,
                     next_review TEXT DEFAULT '2000-01-01',
                     favorite    INTEGER DEFAULT 0
                 );
@@ -140,6 +178,8 @@ class Storage:
             "widget_interval_minutes": 5,
             "widget_pos": None,
             "widget_size": None,
+            "widget_transparency": 35,     # 0 = gần như đục hoàn toàn, 90 = rất trong suốt
+            "widget_always_on_top": True,
             "groq_api_key": "",
         }
         if not os.path.exists(self._config_path):
@@ -190,6 +230,8 @@ class Storage:
                 "example_pronunciation": row["example_pronunciation"] or "",
                 "options": row["options"] or "",
                 "interval": row["interval"],
+                "ease_factor": row["ease_factor"] if row["ease_factor"] is not None else 2.5,
+                "repetitions": row["repetitions"] or 0,
                 "next_review": row["next_review"],
                 "favorite": row["favorite"] or 0,
             })
@@ -206,6 +248,8 @@ class Storage:
             "source": "none",
             "options": "",
             "interval": 1,
+            "ease_factor": 2.5,
+            "repetitions": 0,
             "next_review": "2000-01-01",
             "favorite": 0,
         }
@@ -218,8 +262,10 @@ class Storage:
                 if cid < 0:
                     continue
                 conn.execute(
-                    "UPDATE cards SET interval=?, next_review=?, favorite=? WHERE id=?",
-                    (card["interval"], card["next_review"], card.get("favorite", 0), cid),
+                    "UPDATE cards SET interval=?, ease_factor=?, repetitions=?, "
+                    "next_review=?, favorite=? WHERE id=?",
+                    (card["interval"], card.get("ease_factor", 2.5), card.get("repetitions", 0),
+                     card["next_review"], card.get("favorite", 0), cid),
                 )
             conn.commit()
         except Exception as e:

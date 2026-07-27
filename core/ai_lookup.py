@@ -2,10 +2,13 @@
 import os
 import re
 import json
+import logging
 import urllib.request
 import urllib.error
 from PyQt6.QtCore import QThread, pyqtSignal
 from core.paths import user_data_dir
+
+logger = logging.getLogger(__name__)
 
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 GROQ_MODEL = "llama-3.3-70b-versatile"
@@ -101,13 +104,17 @@ class AILookupWorker(QThread):
             self.finished_ok.emit(self.cmd, info)
 
         except urllib.error.HTTPError as e:
+            logger.error("Groq API lỗi HTTP %s khi tra '%s': %s", e.code, self.cmd, e)
             if e.code == 401:
                 self.finished_err.emit("API key không hợp lệ — kiểm tra lại trong Cài đặt.")
             else:
                 self.finished_err.emit(f"Lỗi kết nối tới AI (HTTP {e.code}).")
-        except urllib.error.URLError:
+        except urllib.error.URLError as e:
+            logger.error("Không kết nối được mạng khi tra '%s': %s", self.cmd, e)
             self.finished_err.emit("Không kết nối được mạng — kiểm tra Internet rồi thử lại.")
-        except json.JSONDecodeError:
+        except json.JSONDecodeError as e:
+            logger.error("AI trả về JSON không đọc được cho '%s': %s", self.cmd, e)
             self.finished_err.emit("AI trả về dữ liệu không đọc được, thử lại giúp mình.")
         except Exception as e:
+            logger.error("Lỗi không xác định khi tra '%s': %s", self.cmd, e)
             self.finished_err.emit(f"Lỗi không xác định: {e}")
