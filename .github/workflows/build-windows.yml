@@ -1,4 +1,4 @@
-name: Build Windows EXE
+name: Build Windows EXE + Linux AppImage
 
 # Chạy tự động mỗi khi push code lên, HOẶC bấm nút "Run workflow" thủ công
 # trong tab Actions trên GitHub (không cần push code mới nếu chỉ muốn build lại).
@@ -8,7 +8,7 @@ name: Build Windows EXE
   workflow_dispatch:
 
 jobs:
-  build:
+  build-windows:
     runs-on: windows-latest   # máy Windows THẬT do GitHub cấp miễn phí, không phải Wine/giả lập
 
     steps:
@@ -31,3 +31,27 @@ jobs:
         with:
           name: FlashcardApp-windows
           path: dist/FlashcardApp.exe
+
+  build-linux:
+    runs-on: ubuntu-latest   # máy Ubuntu THẬT do GitHub cấp miễn phí
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Cài PyQt6 và PyInstaller
+        run: pip install pyqt6 pyinstaller
+
+      - name: Build FlashcardApp-x86_64.AppImage
+        run: bash build_appimage.sh
+
+      - name: Upload AppImage làm artifact để tải về
+        uses: actions/upload-artifact@v4
+        with:
+          name: FlashcardApp-linux
+          path: FlashcardApp-x86_64.AppImage
