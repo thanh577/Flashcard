@@ -1,0 +1,27 @@
+# Python cache — không bao giờ nên đưa lên git, tự sinh khi chạy app
+__pycache__/
+*.pyc
+*.pyo
+
+# Kết quả build PyInstaller — tự sinh ra khi build, không phải mã nguồn
+build/
+dist/
+AppDir/
+*.AppImage
+
+# File log/backup tự sinh khi chạy app từ mã nguồn (chế độ dev dùng data/ local)
+data/app.log
+data/backups/
+
+# Dữ liệu SỐNG khi chạy từ mã nguồn (chế độ dev) — đây là tiến độ học THẬT và
+# cấu hình CÁ NHÂN (có thể chứa API key thật), KHÔNG phải dữ liệu mẫu, không
+# nên đưa lên git. App tự tạo lại 2 file này từ 3 file JSON hạt giống
+# (english.json/chinese.json/linux.json — các file đó VẪN cần track bình
+# thường) nếu chưa có, nên xoá khỏi git hoàn toàn không mất gì.
+data/flashcard.db
+data/config.json
+
+# IDE/editor
+.vscode/
+.idea/
+*.swp

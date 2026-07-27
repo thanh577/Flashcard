@@ -35,16 +35,24 @@ def user_data_dir():
     """Thư mục GHI ĐƯỢC, tồn tại lâu dài giữa các lần chạy — nơi lưu DB tiến độ
     thật (flashcard.db) và config.json.
 
-    - Khi chạy từ .exe đã đóng gói: `%APPDATA%\\FlashcardApp` trên Windows
-      (hoặc `~/.flashcardapp` trên hệ điều hành khác, phòng khi build/test
-      không phải Windows) — thư mục này KHÔNG bị xoá khi app thoát, khác với
-      thư mục tạm `sys._MEIPASS` của PyInstaller.
+    - Windows (đã đóng gói .exe): `%APPDATA%\\FlashcardApp`
+    - Linux/macOS (đã đóng gói .AppImage/binary): `~/.local/share/FlashcardApp`
+      theo đúng chuẩn XDG Base Directory (tôn trọng biến môi trường
+      XDG_DATA_HOME nếu có đặt riêng). TRƯỚC ĐÂY có bug thật: rơi về thẳng
+      `~/FlashcardApp` (đổ thẳng vào thư mục home, không theo chuẩn Linux
+      nào cả) — gây ra thư mục lạ ngay giữa $HOME, đã sửa.
     - Khi chạy từ mã nguồn (đang phát triển): vẫn dùng thư mục `data/` ngay
       trong dự án như trước giờ — không đổi trải nghiệm lúc code/debug.
     """
     if is_frozen():
-        base = os.environ.get("APPDATA") or os.path.expanduser("~")
-        d = os.path.join(base, APP_NAME)
+        if sys.platform == "win32":
+            base = os.environ.get("APPDATA") or os.path.expanduser("~")
+            d = os.path.join(base, APP_NAME)
+        else:
+            xdg_data = os.environ.get("XDG_DATA_HOME") or os.path.join(
+                os.path.expanduser("~"), ".local", "share"
+            )
+            d = os.path.join(xdg_data, APP_NAME)
     else:
         d = os.path.join(_project_root(), "data")
     os.makedirs(d, exist_ok=True)

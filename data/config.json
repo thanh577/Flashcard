@@ -1,9 +1,0 @@
-{
-  "enabled_sources": [
-    "chinese",
-    "linux"
-  ],
-  "audio_enabled": true,
-  "auto_start": false,
-  "default_interval": 1
-}
