@@ -348,11 +348,11 @@ class MainWindow(QWidget):
             self._sync_button_styles()
             self.load_next()
             self.desktop_widget.scheduler = self.scheduler
+            # apply_settings() tự quyết định luôn việc hiện/ẩn widget theo
+            # đúng config mới nhất — KHÔNG gọi show()/hide() thêm ở đây nữa.
+            # Trước đây gọi thêm 1 lần nữa ngay sau đó đã gây xung đột, khiến
+            # widget bị ẩn mất sau khi lưu bất kỳ thay đổi nào trong Cài đặt.
             self.desktop_widget.apply_settings()
-            if self.storage.config.get("desktop_widget_enabled", True):
-                self.desktop_widget.show()
-            else:
-                self.desktop_widget.hide()
             self._sync_widget_action_text()
 
     def _open_quiz(self):

@@ -4,6 +4,8 @@ from PyQt6.QtCore import Qt, QTimer
 from PyQt6.QtGui import QColor, QGuiApplication, QAction, QCursor, QFont
 from core.theme import widget_panel_colors, FG2
 from ui.explain_dialog import CMDS
+import sys
+import ctypes
 
 DEFAULT_WIDTH, DEFAULT_HEIGHT = 460, 460
 MIN_WIDTH, MIN_HEIGHT = 280, 220
@@ -23,6 +25,33 @@ def _apply_3d_effect(label, blur=14, dx=0, dy=3, alpha=210):
     eff.setOffset(dx, dy)
     eff.setColor(QColor(0, 0, 0, alpha))
     label.setGraphicsEffect(eff)
+
+
+def _set_windows_topmost(widget, topmost):
+    """Trên Windows, đổi Qt.WindowType.WindowStaysOnTopHint lúc cửa sổ ĐANG
+    CHẠY không phải lúc nào cũng có tác dụng thật sự ở tầng hệ điều hành (dù
+    gọi setWindowFlags() + show() lại) — cách chắc chắn hơn là gọi thẳng
+    Win32 API SetWindowPos để đặt/bỏ HWND_TOPMOST trực tiếp, không cần huỷ
+    tạo lại cửa sổ (không giật hình, không rủi ro cửa sổ biến mất giữa
+    chừng). Trả về True nếu áp dụng được (chỉ trên Windows), False nếu không
+    (khi đó nơi gọi nên tự làm theo cách Qt thông thường)."""
+    if sys.platform != "win32":
+        return False
+    try:
+        hwnd = int(widget.winId())
+        HWND_TOPMOST = -1
+        HWND_NOTOPMOST = -2
+        SWP_NOMOVE = 0x0002
+        SWP_NOSIZE = 0x0001
+        SWP_NOACTIVATE = 0x0010
+        flag = HWND_TOPMOST if topmost else HWND_NOTOPMOST
+        ctypes.windll.user32.SetWindowPos(
+            hwnd, flag, 0, 0, 0, 0,
+            SWP_NOMOVE | SWP_NOSIZE | SWP_NOACTIVATE
+        )
+        return True
+    except Exception:
+        return False
 
 
 class DesktopWidget(QWidget):
@@ -367,21 +396,35 @@ class DesktopWidget(QWidget):
 
     def apply_settings(self):
         """Gọi lại sau khi đổi cài đặt (khoảng thời gian đổi thẻ, độ trong
-        suốt, luôn-trên-cùng...)."""
+        suốt, luôn-trên-cùng, bật/tắt widget...). Đây là nơi DUY NHẤT quyết
+        định widget có hiện hay không sau khi lưu Cài đặt — nơi gọi hàm này
+        (main_window._open_settings) không được tự show()/hide() thêm, vì
+        từng gây xung đột khiến widget bị ẩn mất sau bất kỳ thay đổi nào."""
         self._restart_timer()
         self._apply_panel_style()
 
-        # Đổi windowFlags trên 1 cửa sổ ĐANG HIỆN đôi khi không đủ để Windows
-        # thực sự cập nhật thuộc tính "topmost" ở tầng hệ điều hành — dù gọi
-        # setWindowFlags() xong show() lại, cửa sổ có thể vẫn giữ trạng thái
-        # topmost cũ (từng gặp vấn đề tương tự với việc kéo thả trước đây).
-        # Cách chắc chắn hơn: ẩn hẳn cửa sổ trước, để Qt/hệ điều hành thực sự
-        # phá huỷ và tạo lại cửa sổ với cờ mới, rồi mới hiện lại.
-        was_visible = self.isVisible()
-        pos, size = self.pos(), self.size()
-        self.hide()
-        self.setWindowFlags(self._window_flags())
-        self.resize(size)
-        self.move(pos)
-        if was_visible:
+        want_on_top = self.storage.config.get("widget_always_on_top", True)
+        # Trên Windows: gọi thẳng Win32 API, không đụng gì đến việc cửa sổ
+        # đang ẩn hay hiện — an toàn tuyệt đối, không có bước "ẩn rồi hiện
+        # lại" nên không thể xảy ra tình trạng widget biến mất giữa chừng.
+        applied_native = _set_windows_topmost(self, want_on_top)
+
+        if not applied_native:
+            # Không phải Windows (Linux/macOS lúc phát triển) — dùng cách của
+            # Qt, chỉ thực hiện khi cờ THỰC SỰ đổi để tránh giật hình không
+            # cần thiết mỗi khi lưu Cài đặt (kể cả khi chỉ đổi độ trong suốt).
+            new_flags = self._window_flags()
+            if new_flags != self.windowFlags():
+                pos, size = self.pos(), self.size()
+                self.hide()
+                self.setWindowFlags(new_flags)
+                self.resize(size)
+                self.move(pos)
+                self.show()
+
+        # Bước cuối cùng, LUÔN thực hiện: hiện/ẩn theo đúng config hiện tại —
+        # 1 lệnh show()/hide() duy nhất, không lặp lại ở nơi khác.
+        if self.storage.config.get("desktop_widget_enabled", True):
             self.show()
+        else:
+            self.hide()
