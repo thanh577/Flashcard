@@ -128,16 +128,52 @@ CÁCH DÙNG (làm 1 lần):
        "Add file" → "Upload files", kéo thả toàn bộ file/thư mục dự án
        (kể cả thư mục ẩn `.github/`) vào rồi bấm "Commit changes".
 
-  c) Vào tab "Actions" trên trang repo — workflow "Build Windows EXE" sẽ tự
-     chạy ngay sau khi push/upload xong (mất khoảng 3-5 phút). Nếu không tự
-     chạy, bấm vào workflow đó → nút "Run workflow" để chạy thủ công.
+  c) Vào tab "Actions" trên trang repo — workflow "Build Windows EXE + Linux
+     AppImage" sẽ tự chạy ngay sau khi push/upload xong (mất khoảng 3-5
+     phút, build cả bản Windows lẫn Linux cùng lúc). Nếu không tự chạy, bấm
+     vào workflow đó → nút "Run workflow" để chạy thủ công.
 
   d) Chờ chạy xong (dấu tích xanh ✔), bấm vào lần chạy đó, kéo xuống mục
-     "Artifacts", tải file "FlashcardApp-windows.zip" về — giải nén ra sẽ
-     thấy đúng file FlashcardApp.exe, là file .exe THẬT build trên Windows
-     thật, đầy đủ icon, đầy đủ dữ liệu, mang đi máy Windows nào cũng chạy
-     được.
+     "Artifacts" — sẽ thấy CẢ 2 file:
+       - "FlashcardApp-windows.zip" → giải nén ra FlashcardApp.exe (Windows)
+       - "FlashcardApp-linux.zip"   → giải nén ra FlashcardApp-x86_64.AppImage (Ubuntu/Linux)
 
 Mỗi lần bạn sửa code và push/upload lại, workflow này sẽ tự chạy lại và tạo
-bản .exe mới — không cần lặp lại các bước cài đặt.
+bản mới cho cả 2 hệ điều hành — không cần lặp lại các bước cài đặt.
+
+
+8) BUILD RA FILE .APPIMAGE ĐỂ CHẠY TRÊN UBUNTU/LINUX
+----------------------------------------------------------
+Khác với Windows, AppImage build được ngay TRÊN MÁY LINUX BẠN ĐANG CÓ —
+không cần mượn máy khác hay dùng GitHub Actions (dù mục 7 ở trên cũng tự
+build AppImage kèm theo nếu bạn dùng GitHub).
+
+CÀI ĐẶT (nếu chưa có):
+    pip install pyqt6 pyinstaller
+
+BUILD (1 lệnh duy nhất, đã tự động hoá toàn bộ các bước):
+    bash build_appimage.sh
+
+Script này tự làm hết: build bằng PyInstaller → dựng cấu trúc AppDir → tải
+appimagetool (nếu máy chưa có, khoảng 15MB, chỉ tải 1 lần) → đóng gói thành
+file .AppImage. Kết quả nằm ở:
+
+    FlashcardApp-x86_64.AppImage
+
+CHẠY THỬ / MANG SANG MÁY LINUX KHÁC:
+    chmod +x FlashcardApp-x86_64.AppImage
+    ./FlashcardApp-x86_64.AppImage
+
+Không cần cài Python/PyQt6 gì thêm trên máy đích — mọi thứ đã đóng gói sẵn
+trong 1 file, y hệt tinh thần file .exe của Windows. Cũng seed đủ dữ liệu
+gốc (456 thẻ) ngay lần chạy đầu tiên, lưu tiến độ vào:
+
+    ~/.local/share/FlashcardApp/   (tương đương %APPDATA% bên Windows)
+
+LƯU Ý: AppImage build trên máy Linux nào thì nên chạy được trên hầu hết bản
+Ubuntu/Linux khác cùng kiến trúc x86_64 — nhưng nếu máy đích dùng bản Linux
+rất cũ (thư viện hệ thống cũ hơn máy build), đôi khi vẫn có thể gặp lỗi
+thiếu thư viện. Muốn chắc chắn nhất, nên build trên bản Ubuntu LTS phổ biến
+(22.04 hoặc 24.04) — hoặc dùng bản build tự động từ GitHub Actions ở mục 7,
+vì máy ảo Ubuntu của GitHub cũng là bản phổ biến, tương thích rộng.
 
