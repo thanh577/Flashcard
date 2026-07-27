@@ -132,7 +132,6 @@ class FlashCard(QWidget):
             f"<div style='text-align:center;'>"
             f"<span style='color:#888;font-size:40px;'>{tag} {src_vi}</span>"
             f"<br><br><b style='font-size:144px;'>{front_text}</b>"
-            f"<br><br><span style='color:#aaa;font-size:40px;'>— nhấn để lật —</span>"
             f"</div>"
         )
         self.label.setStyleSheet("")
@@ -149,9 +148,8 @@ class FlashCard(QWidget):
                 f"<div style='text-align:center;'>"
                 f"<b style='font-size:96px; color:#cc3333;'>{front}</b>"
                 f"<br><i style='font-size:62px; color:#666;'>{pinyin}</i>"
-                f"<br><br><span style='font-size:62px;'>{lines}</span>"
-                + (f"<br><br><span style='color:#555;font-size:50px;'><i>{example}</i></span>" if example else "")
-                + f"<br><br><span style='color:#aaa;font-size:40px;'>— nhấn để về —</span>"
+                f"<br><span style='font-size:72px;'>{lines}</span>"
+                + (f"<br><br><span style='color:#555;font-size:56px;'><i>{example}</i></span>" if example else "")
                 + f"</div>"
             )
         if source == "linux":
@@ -161,9 +159,9 @@ class FlashCard(QWidget):
                 opts = [o.strip() for o in options_raw.split(";;") if o.strip()]
                 if opts:
                     options_html = (
-                        "<br><br><span style='font-size:40px; color:#ffa726;'>▸ Các cờ:</span>"
+                        "<br><br><span style='font-size:48px; color:#ffa726;'>▸ Các cờ:</span>"
                         + "".join(
-                            f"<br><span style='font-size:36px; color:#ccc;'>  {o}</span>"
+                            f"<br><span style='font-size:42px; color:#ccc;'>  {o}</span>"
                             for o in opts
                         )
                     )
@@ -171,25 +169,23 @@ class FlashCard(QWidget):
             cmd_info = CMDS.get(front)
             examples_html = ""
             if cmd_info and cmd_info.get("examples"):
-                examples_html = "<br><br><span style='font-size:40px; color:#ffa726;'>▸ Ví dụ:</span>"
+                examples_html = "<br><br><span style='font-size:48px; color:#ffa726;'>▸ Ví dụ:</span>"
                 for cmd_ex, desc, output in cmd_info["examples"][:2]:
-                    examples_html += f"<br><span style='font-size:32px; color:#aaa;'>$ {cmd_ex}</span>"
+                    examples_html += f"<br><span style='font-size:38px; color:#aaa;'>$ {cmd_ex}</span>"
 
             return (
                 f"<div style='text-align:center;'>"
                 f"<b style='font-size:96px; color:#3366cc;'>{front}</b>"
-                f"<br><br><span style='font-size:62px;'>{lines}</span>"
+                f"<br><span style='font-size:72px;'>{lines}</span>"
                 + options_html
                 + examples_html
-                + f"<br><br><span style='color:#aaa;font-size:40px;'>— nhấn để về —</span>"
                 + f"</div>"
             )
         return (
             f"<div style='text-align:center;'>"
             f"<b style='font-size:96px; color:#2d8a2d;'>{front}</b>"
-            f"<br><br><span style='font-size:76px;'>{lines}</span>"
-            + (f"<br><br><span style='color:#555;font-size:50px;'><i>{example}</i></span>" if example else "")
-            + f"<br><br><span style='color:#aaa;font-size:40px;'>— nhấn để về —</span>"
+            f"<br><span style='font-size:86px;'>{lines}</span>"
+            + (f"<br><br><span style='color:#555;font-size:56px;'><i>{example}</i></span>" if example else "")
             + f"</div>"
         )
 

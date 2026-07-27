@@ -628,5 +628,266 @@
     "related": "",
     "difficulty": "1",
     "source": "linux"
+  },
+  {
+    "front": "sed",
+    "back": "Tìm và thay thế văn bản trong tệp",
+    "example": "sed 's/cũ/mới/g' file.txt (thay tất cả \"cũ\" thành \"mới\")",
+    "options": "s/cũ/mới/ (thay thế);; -i (sửa trực tiếp tệp);; -n p (chỉ in dòng khớp);; -e (nhiều lệnh cùng lúc)",
+    "related": "",
+    "difficulty": "1",
+    "source": "linux"
+  },
+  {
+    "front": "awk",
+    "back": "Xử lý văn bản theo cột",
+    "example": "awk '{print $1}' file.txt (in cột đầu tiên)",
+    "options": "-F, (dùng dấu phẩy làm phân cách);; '{print $1,$3}' (in cột 1 và 3);; NR==1 (chỉ dòng đầu);; {sum+=$1} END {print sum} (tổng cột)",
+    "related": "",
+    "difficulty": "1",
+    "source": "linux"
+  },
+  {
+    "front": "cut",
+    "back": "Cắt cột từ tệp văn bản",
+    "example": "cut -d: -f1 /etc/passwd (lấy tên user từ passwd)",
+    "options": "-d: (dấu phân cách);; -f1,3 (cột 1 và 3);; -c1-5 (ký tự 1 đến 5)",
+    "related": "",
+    "difficulty": "1",
+    "source": "linux"
+  },
+  {
+    "front": "tr",
+    "back": "Thay thế hoặc xóa ký tự",
+    "example": "echo hello | tr 'a-z' 'A-Z' (chuyển thành chữ hoa)",
+    "options": "'a-z' 'A-Z' (chữ thường thành hoa);; -d 'e' (xóa ký tự e);; -s ' ' (gộp khoảng trắng)",
+    "related": "",
+    "difficulty": "1",
+    "source": "linux"
+  },
+  {
+    "front": "tee",
+    "back": "Vừa hiện màn hình vừa ghi vào tệp",
+    "example": "echo test | tee file.txt (hiện test và ghi vào file.txt)",
+    "options": "-a (nối vào cuối tệp thay vì ghi đè);; /dev/null (bỏ qua đầu ra gốc)",
+    "related": "",
+    "difficulty": "1",
+    "source": "linux"
+  },
+  {
+    "front": "xargs",
+    "back": "Chuyển đầu vào thành tham số lệnh",
+    "example": "find . -name '*.txt' | xargs rm (xóa tất cả .txt tìm được)",
+    "options": "-I {} (thay thế {} bằng từng đối số);; -n 1 (mỗi lần 1 đối số);; -P 4 (chạy 4 tiến trình song song)",
+    "related": "",
+    "difficulty": "1",
+    "source": "linux"
+  },
+  {
+    "front": "watch",
+    "back": "Lặp lại lệnh mỗi N giây",
+    "example": "watch -n 2 'free -h' (xem RAM mỗi 2 giây)",
+    "options": "-n 2 (mỗi 2 giây);; -d (tô đậm khác biệt);; -t (không hiện tiêu đề)",
+    "related": "",
+    "difficulty": "1",
+    "source": "linux"
+  },
+  {
+    "front": "screen",
+    "back": "Phiên terminal ảo bền vững",
+    "example": "screen -S ten (tạo phiên tên); Ctrl+A D (tách phiên)",
+    "options": "-S ten (đặt tên phiên);; -ls (liệt kê phiên);; -r ten (nối lại phiên);; -X quit (tắt tất cả phiên)",
+    "related": "",
+    "difficulty": "1",
+    "source": "linux"
+  },
+  {
+    "front": "dd",
+    "back": "Sao chép và chuyển đổi tệp thô",
+    "example": "dd if=/dev/sda of=backup.img bs=4M (sao lưu ổ đĩa)",
+    "options": "if= (nguồn);; of= (đích);; bs=4M (khối 4MB);; status=progress (hiện tiến độ)",
+    "related": "",
+    "difficulty": "1",
+    "source": "linux"
+  },
+  {
+    "front": "fdisk",
+    "back": "Quản lý phân vùng đĩa",
+    "example": "fdisk -l (liệt kê tất cả phân vùng)",
+    "options": "-l (liệt kê);; /dev/sda (chọn ổ);; m (menu trợ giúp);; n (phân vùng mới);; w (ghi thay đổi)",
+    "related": "",
+    "difficulty": "1",
+    "source": "linux"
+  },
+  {
+    "front": "mkfs",
+    "back": "Định dạng phân vùng thành filesystem",
+    "example": "mkfs.ext4 /dev/sda1 (định dạng ext4)",
+    "options": "mkfs.ext4 (định dạng ext4);; mkfs.ntfs (NTFS);; mkfs.vfat (FAT32);; -L nhan (gắn nhãn)",
+    "related": "",
+    "difficulty": "1",
+    "source": "linux"
+  },
+  {
+    "front": "blkid",
+    "back": "Xem UUID và loại filesystem",
+    "example": "blkid (xem UUID tất cả thiết bị)",
+    "options": "-o list (dạng bảng dễ đọc);; -s UUID (chỉ xem UUID)",
+    "related": "",
+    "difficulty": "1",
+    "source": "linux"
+  },
+  {
+    "front": "traceroute",
+    "back": "Dò đường đi mạng đến đích",
+    "example": "traceroute google.com (xem đường đi đến Google)",
+    "options": "-n (IP thay vì tên miền);; -m 30 (tối đa 30 bước nhảy)",
+    "related": "",
+    "difficulty": "1",
+    "source": "linux"
+  },
+  {
+    "front": "dig",
+    "back": "Tra cứu bản ghi DNS",
+    "example": "dig google.com (xem bản ghi DNS của Google)",
+    "options": "google.com A (bản ghi A);; +short (kết quả ngắn);; -x IP (tra ngược)",
+    "related": "",
+    "difficulty": "1",
+    "source": "linux"
+  },
+  {
+    "front": "hostname",
+    "back": "Xem hoặc đặt tên máy",
+    "example": "hostname (in tên máy hiện tại)",
+    "options": "-I (IP của máy);; -f (FQDN đầy đủ);; tenmoi (đổi tên máy)",
+    "related": "",
+    "difficulty": "1",
+    "source": "linux"
+  },
+  {
+    "front": "nohup",
+    "back": "Chạy lệnh không bị tắt khi logout",
+    "example": "nohup python script.py & (chạy script không bị gián đoạn)",
+    "options": "& (chạy nền);; > output.log 2>&1 (ghi log ra tệp)",
+    "related": "",
+    "difficulty": "1",
+    "source": "linux"
+  },
+  {
+    "front": "nice",
+    "back": "Chạy lệnh với độ ưu tiên CPU",
+    "example": "nice -n 10 make (build với ưu tiên thấp)",
+    "options": "-n -20 (ưu tiên cao nhất);; -n 19 (ưu tiên thấp nhất)",
+    "related": "",
+    "difficulty": "1",
+    "source": "linux"
+  },
+  {
+    "front": "nmap",
+    "back": "Quét cổng mạng và dịch vụ",
+    "example": "nmap -p 22,80 192.168.1.1 (quét cổng 22 và 80)",
+    "options": "-p 1-1000 (dải cổng);; -sV (dò phiên bản dịch vụ);; -A (phát hiện OS+dịch vụ)",
+    "related": "",
+    "difficulty": "1",
+    "source": "linux"
+  },
+  {
+    "front": "bzip2",
+    "back": "Nén tệp tỉ lệ cao hơn gzip",
+    "example": "bzip2 file.txt (nén thành file.txt.bz2)",
+    "options": "-k (giữ file gốc);; -d (giải nén);; -9 (nén tối đa);; -v (hiện chi tiết)",
+    "related": "",
+    "difficulty": "1",
+    "source": "linux"
+  },
+  {
+    "front": "xz",
+    "back": "Nén cực cao (thường dùng cho kernel)",
+    "example": "xz -k file.tar (nén file.tar thành file.tar.xz)",
+    "options": "-k (giữ file gốc);; -d (giải nén);; -9 (nén tối đa);; -T 0 (dùng đa luồng)",
+    "related": "",
+    "difficulty": "1",
+    "source": "linux"
+  },
+  {
+    "front": "umask",
+    "back": "Đặt mặt nạ quyền mặc định cho tệp mới",
+    "example": "umask 022 (tệp mới mặc định 644, thư mục 755)",
+    "options": "022 (rw-r--r--);; 077 (rw-------);; -S (dạng ký tự)",
+    "related": "",
+    "difficulty": "1",
+    "source": "linux"
+  },
+  {
+    "front": "lscpu",
+    "back": "Xem thông tin CPU",
+    "example": "lscpu (xem số nhân, tốc độ, kiến trúc CPU)",
+    "options": "-e (bảng chi tiết từng lõi);; --all (tất cả thông tin)",
+    "related": "",
+    "difficulty": "1",
+    "source": "linux"
+  },
+  {
+    "front": "lspci",
+    "back": "Liệt kê thiết bị PCI",
+    "example": "lspci (xem GPU, card mạng, v.v.)",
+    "options": "-v (chi tiết);; -vv (rất chi tiết);; -k (driver đang dùng);; -nn (kèm mã số)",
+    "related": "",
+    "difficulty": "1",
+    "source": "linux"
+  },
+  {
+    "front": "lsusb",
+    "back": "Liệt kê thiết bị USB",
+    "example": "lsusb (xem các thiết bị USB đang cắm)",
+    "options": "-v (chi tiết);; -d 1234:5678 (theo ID);; -t (dạng cây)",
+    "related": "",
+    "difficulty": "1",
+    "source": "linux"
+  },
+  {
+    "front": "dmesg",
+    "back": "Xem nhật ký kernel và trình điều khiển",
+    "example": "dmesg | tail -20 (xem 20 dòng cuối nhật ký kernel)",
+    "options": "-T (hiện thời gian dễ đọc);; -l err (chỉ lỗi);; -w (theo dõi realtime)",
+    "related": "",
+    "difficulty": "1",
+    "source": "linux"
+  },
+  {
+    "front": "timedatectl",
+    "back": "Xem và cài đặt thời gian hệ thống",
+    "example": "timedatectl (xem giờ, múi giờ, NTP)",
+    "options": "list-timezones (danh sách múi giờ);; set-timezone Asia/Ho_Chi_Minh (đặt múi giờ);; set-ntp true (bật NTP)",
+    "related": "",
+    "difficulty": "1",
+    "source": "linux"
+  },
+  {
+    "front": "paste",
+    "back": "Ghép các tệp theo cột",
+    "example": "paste file1.txt file2.txt (ghép 2 tệp cạnh nhau)",
+    "options": "-d, (dùng dấu phẩm làm phân cách);; -s (ghép nối tiếp thay vì song song)",
+    "related": "",
+    "difficulty": "1",
+    "source": "linux"
+  },
+  {
+    "front": "printf",
+    "back": "In văn bản định dạng",
+    "example": "printf 'Họ tên: %s\\nTuổi: %d\\n' 'Nguyen Van A' 25",
+    "options": "%s (chuỗi);; %d (số nguyên);; %f (số thập phân);; \\n (xuống dòng)",
+    "related": "",
+    "difficulty": "1",
+    "source": "linux"
+  },
+  {
+    "front": "env",
+    "back": "Xem hoặc đặt biến môi trường",
+    "example": "env (xem tất cả biến môi trường)",
+    "options": "-i (bắt đầu với môi trường trống);; VAR=value lệnh (tạm thời đặt biến khi chạy lệnh)",
+    "related": "",
+    "difficulty": "1",
+    "source": "linux"
   }
 ]

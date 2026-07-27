@@ -1402,5 +1402,266 @@
     "pronunciation": "Thiên chì",
     "example_pronunciation": "Chin thiên thiên chì chân hảo.",
     "source": "chinese"
+  },
+  {
+    "front": "多少",
+    "back": "Bao nhiêu",
+    "pinyin": "duō shǎo",
+    "example": "这个多少钱？(Cái này bao nhiêu tiền?)",
+    "pronunciation": "Đuô sảo",
+    "example_pronunciation": "Chợ cơ đuô sảo chiền?",
+    "source": "chinese"
+  },
+  {
+    "front": "什么",
+    "back": "Cái gì",
+    "pinyin": "shén me",
+    "example": "你叫什么名字？(Bạn tên là gì?)",
+    "pronunciation": "Sấn mơ",
+    "example_pronunciation": "Nỉ chiêu thẩm mơ mính chư?",
+    "source": "chinese"
+  },
+  {
+    "front": "为什么",
+    "back": "Tại sao",
+    "pinyin": "wèi shén me",
+    "example": "为什么你不来？(Tại sao bạn không đến?)",
+    "pronunciation": "Uây sấn mơ",
+    "example_pronunciation": "Uây sấn mơ nỉ bù lái?",
+    "source": "chinese"
+  },
+  {
+    "front": "怎么",
+    "back": "Như thế nào / Làm sao",
+    "pinyin": "zěn me",
+    "example": "这个怎么用？(Cái này dùng thế nào?)",
+    "pronunciation": "Chẩn mơ",
+    "example_pronunciation": "Chợ cơ chẩn mơ dung?",
+    "source": "chinese"
+  },
+  {
+    "front": "谁",
+    "back": "Ai",
+    "pinyin": "shéi",
+    "example": "谁来了？(Ai đến vậy?)",
+    "pronunciation": "Xấy",
+    "example_pronunciation": "Xấy lái lơ?",
+    "source": "chinese"
+  },
+  {
+    "front": "哪",
+    "back": "Nào",
+    "pinyin": "nǎ",
+    "example": "你是哪国人？(Bạn là người nước nào?)",
+    "pronunciation": "Nả",
+    "example_pronunciation": "Nỉ sứ nả cuó rấn?",
+    "source": "chinese"
+  },
+  {
+    "front": "这",
+    "back": "Này / Đây",
+    "pinyin": "zhè",
+    "example": "这本书很好。(Cuốn sách này rất hay.)",
+    "pronunciation": "Chợ",
+    "example_pronunciation": "Chợ bẩn sư hẩn hảo.",
+    "source": "chinese"
+  },
+  {
+    "front": "那",
+    "back": "Kia / Đó",
+    "pinyin": "nà",
+    "example": "那个人是谁？(Người kia là ai?)",
+    "pronunciation": "Nà",
+    "example_pronunciation": "Nà cơ rấn sứ xấy?",
+    "source": "chinese"
+  },
+  {
+    "front": "很",
+    "back": "Rất",
+    "pinyin": "hěn",
+    "example": "我很好。(Tôi rất tốt.)",
+    "pronunciation": "Hẩn",
+    "example_pronunciation": "Uổ hẩn hảo.",
+    "source": "chinese"
+  },
+  {
+    "front": "太",
+    "back": "Quá",
+    "pinyin": "tài",
+    "example": "这个太大了。(Cái này quá to.)",
+    "pronunciation": "Thài",
+    "example_pronunciation": "Chợ cơ thài đà lơ.",
+    "source": "chinese"
+  },
+  {
+    "front": "最",
+    "back": "Nhất",
+    "pinyin": "zuì",
+    "example": "这是最好的。(Đây là cái tốt nhất.)",
+    "pronunciation": "Chuây",
+    "example_pronunciation": "Chợ sứ chuây hảo đơ.",
+    "source": "chinese"
+  },
+  {
+    "front": "也",
+    "back": "Cũng",
+    "pinyin": "yě",
+    "example": "我也想去。(Tôi cũng muốn đi.)",
+    "pronunciation": "Dẻ",
+    "example_pronunciation": "Uổ dẻ xiảng chuy.",
+    "source": "chinese"
+  },
+  {
+    "front": "都",
+    "back": "Đều / Tất cả",
+    "pinyin": "dōu",
+    "example": "我们都很高兴。(Chúng tôi đều rất vui.)",
+    "pronunciation": "Đâu",
+    "example_pronunciation": "Uổ mơn đâu hẩn cao xinh.",
+    "source": "chinese"
+  },
+  {
+    "front": "和",
+    "back": "Và",
+    "pinyin": "hé",
+    "example": "我和你一起去。(Tôi và bạn cùng đi.)",
+    "pronunciation": "Hứa",
+    "example_pronunciation": "Uổ hứa nỉ yi chỉ chuy.",
+    "source": "chinese"
+  },
+  {
+    "front": "但是",
+    "back": "Nhưng",
+    "pinyin": "dàn shì",
+    "example": "我想去，但是没时间。(Tôi muốn đi, nhưng không có thời gian.)",
+    "pronunciation": "Tàn sứ",
+    "example_pronunciation": "Uổ xiảng chuy, tàn sứ mấy sứ chiên.",
+    "source": "chinese"
+  },
+  {
+    "front": "因为",
+    "back": "Bởi vì",
+    "pinyin": "yīn wèi",
+    "example": "因为下雨，我不去。(Bởi vì trời mưa, tôi không đi.)",
+    "pronunciation": "Nhân uây",
+    "example_pronunciation": "Nhân uây xia ủ, uổ bù chuy.",
+    "source": "chinese"
+  },
+  {
+    "front": "所以",
+    "back": "Vì vậy / Cho nên",
+    "pinyin": "suǒ yǐ",
+    "example": "我累了，所以休息。(Tôi mệt, vì vậy tôi nghỉ.)",
+    "pronunciation": "Xuả ỉ",
+    "example_pronunciation": "Uổ lây lơ, xuả ỉ siu xi.",
+    "source": "chinese"
+  },
+  {
+    "front": "如果",
+    "back": "Nếu",
+    "pinyin": "rú guǒ",
+    "example": "如果明天好天，我们去海边。(Nếu ngày mai đẹp trời, chúng ta đi biển.)",
+    "pronunciation": "Rú cuả",
+    "example_pronunciation": "Rú cuả minh thiên hảo thiên, uổ mơn chuy hải biên.",
+    "source": "chinese"
+  },
+  {
+    "front": "还",
+    "back": "Vẫn còn",
+    "pinyin": "hái",
+    "example": "我还有问题。(Tôi vẫn còn câu hỏi.)",
+    "pronunciation": "Hái",
+    "example_pronunciation": "Uổ hái yẩu uấn thí.",
+    "source": "chinese"
+  },
+  {
+    "front": "已经",
+    "back": "Đã",
+    "pinyin": "yǐ jīng",
+    "example": "我已经吃了。(Tôi đã ăn rồi.)",
+    "pronunciation": "Ỉ chinh",
+    "example_pronunciation": "Uổ ỉ chinh chư lơ.",
+    "source": "chinese"
+  },
+  {
+    "front": "正在",
+    "back": "Đang",
+    "pinyin": "zhèng zài",
+    "example": "我正在工作。(Tôi đang làm việc.)",
+    "pronunciation": "Chính chài",
+    "example_pronunciation": "Uổ chính chài công trố.",
+    "source": "chinese"
+  },
+  {
+    "front": "从",
+    "back": "Từ",
+    "pinyin": "cóng",
+    "example": "你从哪儿来？(Bạn từ đâu đến?)",
+    "pronunciation": "Thúng",
+    "example_pronunciation": "Nỉ thúng nả nhi lái?",
+    "source": "chinese"
+  },
+  {
+    "front": "到",
+    "back": "Đến",
+    "pinyin": "dào",
+    "example": "到我家来玩。(Đến nhà tôi chơi.)",
+    "pronunciation": "Đào",
+    "example_pronunciation": "Đào uổ chia lái oán.",
+    "source": "chinese"
+  },
+  {
+    "front": "在",
+    "back": "Ở tại",
+    "pinyin": "zài",
+    "example": "我在学校。(Tôi ở trường học.)",
+    "pronunciation": "Chài",
+    "example_pronunciation": "Uổ chài xuyê xiao.",
+    "source": "chinese"
+  },
+  {
+    "front": "跟",
+    "back": "Với / Cùng",
+    "pinyin": "gēn",
+    "example": "跟我来！(Đi với tôi!)",
+    "pronunciation": "Cân",
+    "example_pronunciation": "Cân uổ lái!",
+    "source": "chinese"
+  },
+  {
+    "front": "比",
+    "back": "Hơn / So với",
+    "pinyin": "bǐ",
+    "example": "他比我高。(Anh ấy cao hơn tôi.)",
+    "pronunciation": "Pỉ",
+    "example_pronunciation": "Tha pỉ uổ cao.",
+    "source": "chinese"
+  },
+  {
+    "front": "对",
+    "back": "Đúng / Đối với",
+    "pinyin": "duì",
+    "example": "你说得对。(Bạn nói đúng.)",
+    "pronunciation": "Đuây",
+    "example_pronunciation": "Nỉ suô tợ đuây.",
+    "source": "chinese"
+  },
+  {
+    "front": "错",
+    "back": "Sai",
+    "pinyin": "cuò",
+    "example": "对不起，我错了。(Xin lỗi, tôi sai rồi.)",
+    "pronunciation": "Thò",
+    "example_pronunciation": "Đuây bù chỉ, uổ thò lơ.",
+    "source": "chinese"
+  },
+  {
+    "front": "做",
+    "back": "Làm",
+    "pinyin": "zuò",
+    "example": "你在做什么？(Bạn đang làm gì?)",
+    "pronunciation": "Chò",
+    "example_pronunciation": "Nỉ chài chò thẩm mơ?",
+    "source": "chinese"
   }
 ]

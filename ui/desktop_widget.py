@@ -112,13 +112,6 @@ class DesktopWidget(QWidget):
         self.label_details.setStyleSheet("background: transparent;")
         _apply_3d_effect(self.label_details, blur=8, dy=2, alpha=170)
 
-        self.hint = QLabel(
-            "kéo thân để di chuyển · kéo góc ◢ để đổi cỡ · click: đổi thẻ mới",
-            self.panel)
-        self.hint.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self.hint.setAttribute(Qt.WidgetAttribute.WA_TransparentForMouseEvents, True)
-        self.hint.setStyleSheet(f"background: transparent; font-size: 11px; color: {FG2};")
-
         self._resize_grip = QLabel("◢", self.panel)
         self._resize_grip.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self._resize_grip.setAttribute(Qt.WidgetAttribute.WA_TransparentForMouseEvents, True)
@@ -137,8 +130,7 @@ class DesktopWidget(QWidget):
         w, h = self.width(), self.height()
         self.panel.setGeometry(0, 0, w, h)
         self.label_front.setGeometry(10, 10, w - 20, 82)
-        self.label_details.setGeometry(10, 96, w - 20, h - 96 - 26)
-        self.hint.setGeometry(6, h - 24, w - GRIP - 14, 18)
+        self.label_details.setGeometry(10, 96, w - 20, h - 96 - 14)
         self._resize_grip.setGeometry(w - GRIP - 4, h - GRIP - 4, GRIP, GRIP)
 
     # ---------- vị trí ----------
