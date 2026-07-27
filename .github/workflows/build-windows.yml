@@ -1,0 +1,33 @@
+name: Build Windows EXE
+
+# Chạy tự động mỗi khi push code lên, HOẶC bấm nút "Run workflow" thủ công
+# trong tab Actions trên GitHub (không cần push code mới nếu chỉ muốn build lại).
+"on":
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest   # máy Windows THẬT do GitHub cấp miễn phí, không phải Wine/giả lập
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Cài PyQt6 và PyInstaller
+        run: pip install pyqt6 pyinstaller
+
+      - name: Build FlashcardApp.exe
+        run: pyinstaller FlashcardApp.spec
+
+      - name: Upload FlashcardApp.exe làm artifact để tải về
+        uses: actions/upload-artifact@v4
+        with:
+          name: FlashcardApp-windows
+          path: dist/FlashcardApp.exe
