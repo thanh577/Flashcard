@@ -1,0 +1,884 @@
+[
+  {
+    "front": "ls",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2026-07-23"
+  },
+  {
+    "front": "cd",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "pwd",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "mkdir",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "rm",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "cp",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "mv",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "cat",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "touch",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "ln",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "file",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "tree",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "grep",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "find",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "locate",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "which",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "head",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "tail",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "less",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "wc",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "sort",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "uniq",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "diff",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "tar",
+    "source": "hoc-linux",
+    "interval": 2,
+    "next_review": "2026-07-24"
+  },
+  {
+    "front": "zip",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "unzip",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "gzip",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "chmod",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "chown",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "sudo",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "su",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "passwd",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "whoami",
+    "source": "hoc-linux",
+    "interval": 3,
+    "next_review": "2026-07-25"
+  },
+  {
+    "front": "id",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "groups",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "top",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "htop",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "ps",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "kill",
+    "source": "hoc-linux",
+    "interval": 2,
+    "next_review": "2026-07-24"
+  },
+  {
+    "front": "killall",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "df",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "du",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "free",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2026-07-23"
+  },
+  {
+    "front": "uname",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "uptime",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "lsblk",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "mount",
+    "source": "hoc-linux",
+    "interval": 2,
+    "next_review": "2026-07-24"
+  },
+  {
+    "front": "ping",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "curl",
+    "source": "hoc-linux",
+    "interval": 2,
+    "next_review": "2026-07-24"
+  },
+  {
+    "front": "wget",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "ssh",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "scp",
+    "source": "hoc-linux",
+    "interval": 3,
+    "next_review": "2026-07-25"
+  },
+  {
+    "front": "ip",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "ss",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "apt",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "snap",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "dpkg",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "nano",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "vim",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "man",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "clear",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "history",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2026-07-23"
+  },
+  {
+    "front": "echo",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "date",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "cal",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "bc",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "alias",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "crontab",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "systemctl",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "journalctl",
+    "source": "hoc-linux",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "你好",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "谢谢",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "对不起",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "没关系",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "今天",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "明天",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "昨天",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "工作",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "学习",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "朋友",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "家人",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "吃饭",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "喝水",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "睡觉",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "时间",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "钱",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "贵",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "便宜",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "买",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2026-07-23"
+  },
+  {
+    "front": "卖",
+    "source": "hoc-trung",
+    "interval": 2,
+    "next_review": "2026-07-24"
+  },
+  {
+    "front": "好",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "不好",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "大",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "小",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "多",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "少",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "快",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "慢",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "来",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "去",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "回家",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "上班",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "下班",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "公司",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "老板",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "同事",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "会议",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "电话",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "电脑",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "手机",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "网络",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "邮件",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "地址",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "城市",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "国家",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "越南",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "中国",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "语言",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "中文",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "英文",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "医院",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "药",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "身体",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2026-07-23"
+  },
+  {
+    "front": "天气",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "热",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "冷",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "下雨",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "高兴",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "难过",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "累",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "忙",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "重要",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "问题",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "答案",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "帮助",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "需要",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "可以",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "不可以",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "一起",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "等一下",
+    "source": "hoc-trung",
+    "interval": 3,
+    "next_review": "2026-07-25"
+  },
+  {
+    "front": "现在",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "以后",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "以前",
+    "source": "hoc-trung",
+    "interval": 3,
+    "next_review": "2026-07-25"
+  },
+  {
+    "front": "快乐",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "加油",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "内卷",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  },
+  {
+    "front": "papa",
+    "source": "hoc-trung",
+    "interval": 1,
+    "next_review": "2000-01-01"
+  }
+]

@@ -1,0 +1,1406 @@
+[
+  {
+    "front": "你好",
+    "back": "Xin chào",
+    "pinyin": "nǐ hǎo",
+    "example": "你好！很高兴认识你。(Xin chào! Rất vui được gặp bạn.)",
+    "pronunciation": "Nỉ hảo",
+    "example_pronunciation": "Nỉ hảo! Hẩn cao xing rấn sứ nỉ.",
+    "source": "chinese"
+  },
+  {
+    "front": "谢谢",
+    "back": "Cảm ơn",
+    "pinyin": "xiè xie",
+    "example": "谢谢你的帮助。(Cảm ơn sự giúp đỡ của bạn.)",
+    "pronunciation": "Siê siê",
+    "example_pronunciation": "Siê siê nỉ đơ băng chủ.",
+    "source": "chinese"
+  },
+  {
+    "front": "对不起",
+    "back": "Xin lỗi",
+    "pinyin": "duì bu qǐ",
+    "example": "对不起，我来晚了。(Xin lỗi, tôi đến muộn.)",
+    "pronunciation": "Đuây bù chỉ",
+    "example_pronunciation": "Đuây bù chỉ, uổ lái uẩn lơ.",
+    "source": "chinese"
+  },
+  {
+    "front": "没关系",
+    "back": "Không sao",
+    "pinyin": "méi guān xi",
+    "example": "没关系，请坐。(Không sao, mời ngồi.)",
+    "pronunciation": "Mấy quan xi",
+    "example_pronunciation": "Mấy quan xi, chỉnh trò.",
+    "source": "chinese"
+  },
+  {
+    "front": "今天",
+    "back": "Hôm nay",
+    "pinyin": "jīn tiān",
+    "example": "今天天气很好。(Hôm nay thời tiết rất đẹp.)",
+    "pronunciation": "Chin thiên",
+    "example_pronunciation": "Chin thiên thiên chì hẩn hảo.",
+    "source": "chinese"
+  },
+  {
+    "front": "明天",
+    "back": "Ngày mai",
+    "pinyin": "míng tiān",
+    "example": "明天我有会议。(Ngày mai tôi có cuộc họp.)",
+    "pronunciation": "Minh thiên",
+    "example_pronunciation": "Minh thiên uổ yẩu huây yi.",
+    "source": "chinese"
+  },
+  {
+    "front": "昨天",
+    "back": "Hôm qua",
+    "pinyin": "zuó tiān",
+    "example": "昨天我很忙。(Hôm qua tôi rất bận.)",
+    "pronunciation": "Trước thiên",
+    "example_pronunciation": "Trước thiên uổ hẩn máng.",
+    "source": "chinese"
+  },
+  {
+    "front": "工作",
+    "back": "Công việc",
+    "pinyin": "gōng zuò",
+    "example": "你的工作怎么样？(Công việc của bạn thế nào?)",
+    "pronunciation": "Công trố",
+    "example_pronunciation": "Nỉ đơ công trố thẩm mơ yàng?",
+    "source": "chinese"
+  },
+  {
+    "front": "学习",
+    "back": "Học tập",
+    "pinyin": "xué xí",
+    "example": "我每天学习中文。(Tôi học tiếng Trung mỗi ngày.)",
+    "pronunciation": "Xuyê xi",
+    "example_pronunciation": "Uổ mẩy thiên xuyê xi chung uấn.",
+    "source": "chinese"
+  },
+  {
+    "front": "朋友",
+    "back": "Bạn bè",
+    "pinyin": "péng yǒu",
+    "example": "他是我的好朋友。(Anh ấy là bạn tốt của tôi.)",
+    "pronunciation": "Phấng yẩu",
+    "example_pronunciation": "Thă sứ uổ đơ hảo phấng yẩu.",
+    "source": "chinese"
+  },
+  {
+    "front": "家人",
+    "back": "Gia đình",
+    "pinyin": "jiā rén",
+    "example": "我很爱我的家人。(Tôi rất yêu gia đình mình.)",
+    "pronunciation": "Chia rấn",
+    "example_pronunciation": "Uổ hẩn ài uổ đơ chia rấn.",
+    "source": "chinese"
+  },
+  {
+    "front": "吃饭",
+    "back": "Ăn cơm",
+    "pinyin": "chī fàn",
+    "example": "你吃饭了吗？(Bạn ăn cơm chưa?)",
+    "pronunciation": "Chư phàn",
+    "example_pronunciation": "Nỉ chư phàn lơ ma?",
+    "source": "chinese"
+  },
+  {
+    "front": "喝水",
+    "back": "Uống nước",
+    "pinyin": "hē shuǐ",
+    "example": "多喝水对身体好。(Uống nhiều nước tốt cho sức khỏe.)",
+    "pronunciation": "Hơ thuấy",
+    "example_pronunciation": "Đuô hơ thuấy đuây sân tỉ hảo.",
+    "source": "chinese"
+  },
+  {
+    "front": "睡觉",
+    "back": "Ngủ",
+    "pinyin": "shuì jiào",
+    "example": "我昨晚睡得很好。(Tối qua tôi ngủ rất ngon.)",
+    "pronunciation": "Thuây chiào",
+    "example_pronunciation": "Uổ trước uẩn thuây đơ hẩn hảo.",
+    "source": "chinese"
+  },
+  {
+    "front": "时间",
+    "back": "Thời gian",
+    "pinyin": "shí jiān",
+    "example": "时间就是金钱。(Thời gian là vàng bạc.)",
+    "pronunciation": "Sứ chiên",
+    "example_pronunciation": "Sứ chiên chiù sứ chin chiền.",
+    "source": "chinese"
+  },
+  {
+    "front": "钱",
+    "back": "Tiền",
+    "pinyin": "qián",
+    "example": "这个多少钱？(Cái này bao nhiêu tiền?)",
+    "pronunciation": "Chiền",
+    "example_pronunciation": "Chợ cơ đuô sảo chiền?",
+    "source": "chinese"
+  },
+  {
+    "front": "贵",
+    "back": "Đắt",
+    "pinyin": "guì",
+    "example": "这个太贵了。(Cái này đắt quá.)",
+    "pronunciation": "Quây",
+    "example_pronunciation": "Chợ cơ thài quây lơ.",
+    "source": "chinese"
+  },
+  {
+    "front": "便宜",
+    "back": "Rẻ",
+    "pinyin": "pián yi",
+    "example": "这里的东西很便宜。(Đồ ở đây rất rẻ.)",
+    "pronunciation": "Phiền yi",
+    "example_pronunciation": "Chợ lỉ đơ đông xi hẩn phiền yi.",
+    "source": "chinese"
+  },
+  {
+    "front": "买",
+    "back": "Mua",
+    "pinyin": "mǎi",
+    "example": "我想买这个。(Tôi muốn mua cái này.)",
+    "pronunciation": "Mẩy",
+    "example_pronunciation": "Uổ xiảng mẩy chợ cơ.",
+    "source": "chinese"
+  },
+  {
+    "front": "卖",
+    "back": "Bán",
+    "pinyin": "mài",
+    "example": "这里卖什么？(Ở đây bán gì?)",
+    "pronunciation": "Mài",
+    "example_pronunciation": "Chợ lỉ mài sấn mơ?",
+    "source": "chinese"
+  },
+  {
+    "front": "好",
+    "back": "Tốt / Được",
+    "pinyin": "hǎo",
+    "example": "好的，没问题。(Được, không vấn đề gì.)",
+    "pronunciation": "Hảo",
+    "example_pronunciation": "Hảo đơ, mấy uấn thí.",
+    "source": "chinese"
+  },
+  {
+    "front": "不好",
+    "back": "Không tốt",
+    "pinyin": "bù hǎo",
+    "example": "这个质量不好。(Chất lượng cái này không tốt.)",
+    "pronunciation": "Bù hảo",
+    "example_pronunciation": "Chợ cơ chứ liàng bù hảo.",
+    "source": "chinese"
+  },
+  {
+    "front": "大",
+    "back": "To / Lớn",
+    "pinyin": "dà",
+    "example": "这个房间很大。(Căn phòng này rất rộng.)",
+    "pronunciation": "Đà",
+    "example_pronunciation": "Chợ cơ phàng chiên hẩn đà.",
+    "source": "chinese"
+  },
+  {
+    "front": "小",
+    "back": "Nhỏ",
+    "pinyin": "xiǎo",
+    "example": "我有一只小猫。(Tôi có một con mèo nhỏ.)",
+    "pronunciation": "Xiảo",
+    "example_pronunciation": "Uổ yẩu yi chỉ xiảo máo.",
+    "source": "chinese"
+  },
+  {
+    "front": "多",
+    "back": "Nhiều",
+    "pinyin": "duō",
+    "example": "今天人很多。(Hôm nay nhiều người.)",
+    "pronunciation": "Đuô",
+    "example_pronunciation": "Chin thiên rấn hẩn đuô.",
+    "source": "chinese"
+  },
+  {
+    "front": "少",
+    "back": "Ít",
+    "pinyin": "shǎo",
+    "example": "我说的少，做的多。(Tôi nói ít, làm nhiều.)",
+    "pronunciation": "Sảo",
+    "example_pronunciation": "Uổ suô đơ sảo, trò đơ đuô.",
+    "source": "chinese"
+  },
+  {
+    "front": "快",
+    "back": "Nhanh",
+    "pinyin": "kuài",
+    "example": "请快一点。(Xin nhanh lên một chút.)",
+    "pronunciation": "Khuài",
+    "example_pronunciation": "Chỉng khuài yi điẩn.",
+    "source": "chinese"
+  },
+  {
+    "front": "慢",
+    "back": "Chậm",
+    "pinyin": "màn",
+    "example": "请说慢一点。(Xin nói chậm một chút.)",
+    "pronunciation": "Màn",
+    "example_pronunciation": "Chỉng suô màn yi điẩn.",
+    "source": "chinese"
+  },
+  {
+    "front": "来",
+    "back": "Đến / Lại",
+    "pinyin": "lái",
+    "example": "你从哪里来？(Bạn đến từ đâu?)",
+    "pronunciation": "Lái",
+    "example_pronunciation": "Nỉ thóng nả lỉ lái?",
+    "source": "chinese"
+  },
+  {
+    "front": "去",
+    "back": "Đi",
+    "pinyin": "qù",
+    "example": "你去哪里？(Bạn đi đâu?)",
+    "pronunciation": "Chuy",
+    "example_pronunciation": "Nỉ chuy nả lỉ?",
+    "source": "chinese"
+  },
+  {
+    "front": "回家",
+    "back": "Về nhà",
+    "pinyin": "huí jiā",
+    "example": "我要回家了。(Tôi phải về nhà rồi.)",
+    "pronunciation": "Huây chia",
+    "example_pronunciation": "Uổ yào huây chia lơ.",
+    "source": "chinese"
+  },
+  {
+    "front": "上班",
+    "back": "Đi làm",
+    "pinyin": "shàng bān",
+    "example": "我每天八点上班。(Tôi đi làm lúc 8 giờ mỗi ngày.)",
+    "pronunciation": "Sảng ban",
+    "example_pronunciation": "Uổ mẩy thiên ba điẩn sảng ban.",
+    "source": "chinese"
+  },
+  {
+    "front": "下班",
+    "back": "Tan làm",
+    "pinyin": "xià bān",
+    "example": "你几点下班？(Bạn mấy giờ tan làm?)",
+    "pronunciation": "Xia ban",
+    "example_pronunciation": "Nỉ chỉ điẩn xia ban?",
+    "source": "chinese"
+  },
+  {
+    "front": "公司",
+    "back": "Công ty",
+    "pinyin": "gōng sī",
+    "example": "我在一家小公司工作。(Tôi làm ở một công ty nhỏ.)",
+    "pronunciation": "Công sư",
+    "example_pronunciation": "Uổ chài yi chia xiảo công sư công trố.",
+    "source": "chinese"
+  },
+  {
+    "front": "老板",
+    "back": "Sếp / Ông chủ",
+    "pinyin": "lǎo bǎn",
+    "example": "我的老板很好。(Sếp tôi rất tốt.)",
+    "pronunciation": "Lảo bản",
+    "example_pronunciation": "Uổ đơ lảo bản hẩn hảo.",
+    "source": "chinese"
+  },
+  {
+    "front": "同事",
+    "back": "Đồng nghiệp",
+    "pinyin": "tóng shì",
+    "example": "我的同事都很友好。(Đồng nghiệp của tôi đều thân thiện.)",
+    "pronunciation": "Thóng sứ",
+    "example_pronunciation": "Uổ đơ thóng sứ đou hẩn yẩu hảo.",
+    "source": "chinese"
+  },
+  {
+    "front": "会议",
+    "back": "Cuộc họp",
+    "pinyin": "huì yì",
+    "example": "下午有一个会议。(Chiều nay có một cuộc họp.)",
+    "pronunciation": "Huây yi",
+    "example_pronunciation": "Xia ủ yẩu yi cơ huây yi.",
+    "source": "chinese"
+  },
+  {
+    "front": "电话",
+    "back": "Điện thoại",
+    "pinyin": "diàn huà",
+    "example": "请给我打电话。(Xin hãy gọi điện cho tôi.)",
+    "pronunciation": "Điền hua",
+    "example_pronunciation": "Chỉng gẩy uổ đả điền hua.",
+    "source": "chinese"
+  },
+  {
+    "front": "电脑",
+    "back": "Máy tính",
+    "pinyin": "diàn nǎo",
+    "example": "我的电脑坏了。(Máy tính của tôi bị hỏng.)",
+    "pronunciation": "Điền nảo",
+    "example_pronunciation": "Uổ đơ điền nảo huài lơ.",
+    "source": "chinese"
+  },
+  {
+    "front": "手机",
+    "back": "Điện thoại di động",
+    "pinyin": "shǒu jī",
+    "example": "我的手机没电了。(Điện thoại tôi hết pin rồi.)",
+    "pronunciation": "Sẩu chi",
+    "example_pronunciation": "Uổ đơ sẩu chi mấy điền lơ.",
+    "source": "chinese"
+  },
+  {
+    "front": "网络",
+    "back": "Mạng internet",
+    "pinyin": "wǎng luò",
+    "example": "这里有网络吗？(Ở đây có wifi không?)",
+    "pronunciation": "Uổng luò",
+    "example_pronunciation": "Chợ lỉ yẩu uổng luò ma?",
+    "source": "chinese"
+  },
+  {
+    "front": "邮件",
+    "back": "Email",
+    "pinyin": "yóu jiàn",
+    "example": "我给你发邮件。(Tôi sẽ gửi email cho bạn.)",
+    "pronunciation": "Yẩu chiền",
+    "example_pronunciation": "Uổ gẩy nỉ phă yẩu chiền.",
+    "source": "chinese"
+  },
+  {
+    "front": "地址",
+    "back": "Địa chỉ",
+    "pinyin": "dì zhǐ",
+    "example": "你的地址是什么？(Địa chỉ của bạn là gì?)",
+    "pronunciation": "Đi chỉ",
+    "example_pronunciation": "Nỉ đơ đi chỉ sứ sấn mơ?",
+    "source": "chinese"
+  },
+  {
+    "front": "城市",
+    "back": "Thành phố",
+    "pinyin": "chéng shì",
+    "example": "上海是一个大城市。(Thượng Hải là một thành phố lớn.)",
+    "pronunciation": "Chứng sứ",
+    "example_pronunciation": "Sảng hải sứ yi cơ đà chứng sứ.",
+    "source": "chinese"
+  },
+  {
+    "front": "国家",
+    "back": "Quốc gia",
+    "pinyin": "guó jiā",
+    "example": "你来自哪个国家？(Bạn đến từ quốc gia nào?)",
+    "pronunciation": "Cuó chia",
+    "example_pronunciation": "Nỉ lái từ nả cơ cuó chia?",
+    "source": "chinese"
+  },
+  {
+    "front": "越南",
+    "back": "Việt Nam",
+    "pinyin": "Yuè nán",
+    "example": "越南的食物很好吃。(Đồ ăn Việt Nam rất ngon.)",
+    "pronunciation": "Yuề nán",
+    "example_pronunciation": "Yuề nán đơ sứ ủ hẩn hảo chư.",
+    "source": "chinese"
+  },
+  {
+    "front": "中国",
+    "back": "Trung Quốc",
+    "pinyin": "Zhōng guó",
+    "example": "中国有很多历史。(Trung Quốc có rất nhiều lịch sử.)",
+    "pronunciation": "Chung cuó",
+    "example_pronunciation": "Chung cuó yẩu hẩn đuô lì sứ.",
+    "source": "chinese"
+  },
+  {
+    "front": "语言",
+    "back": "Ngôn ngữ",
+    "pinyin": "yǔ yán",
+    "example": "你会说几种语言？(Bạn nói được mấy thứ tiếng?)",
+    "pronunciation": "Yủ yén",
+    "example_pronunciation": "Nỉ huây suô chỉ chủng yủ yén?",
+    "source": "chinese"
+  },
+  {
+    "front": "中文",
+    "back": "Tiếng Trung",
+    "pinyin": "Zhōng wén",
+    "example": "我在学中文。(Tôi đang học tiếng Trung.)",
+    "pronunciation": "Chung uấn",
+    "example_pronunciation": "Uổ chài xuyê chung uấn.",
+    "source": "chinese"
+  },
+  {
+    "front": "英文",
+    "back": "Tiếng Anh",
+    "pinyin": "Yīng wén",
+    "example": "你会说英文吗？(Bạn có biết tiếng Anh không?)",
+    "pronunciation": "Inh uấn",
+    "example_pronunciation": "Nỉ huây suô inh uấn ma?",
+    "source": "chinese"
+  },
+  {
+    "front": "医院",
+    "back": "Bệnh viện",
+    "pinyin": "yī yuàn",
+    "example": "医院在哪里？(Bệnh viện ở đâu?)",
+    "pronunciation": "Yi yuền",
+    "example_pronunciation": "Yi yuền chài nả lỉ?",
+    "source": "chinese"
+  },
+  {
+    "front": "药",
+    "back": "Thuốc",
+    "pinyin": "yào",
+    "example": "这个药很苦。(Thuốc này rất đắng.)",
+    "pronunciation": "Yào",
+    "example_pronunciation": "Chợ cơ yào hẩn kủ.",
+    "source": "chinese"
+  },
+  {
+    "front": "身体",
+    "back": "Cơ thể / Sức khỏe",
+    "pinyin": "shēn tǐ",
+    "example": "注意身体。(Hãy giữ gìn sức khỏe.)",
+    "pronunciation": "Sân tỉ",
+    "example_pronunciation": "Chủ yi sân tỉ.",
+    "source": "chinese"
+  },
+  {
+    "front": "天气",
+    "back": "Thời tiết",
+    "pinyin": "tiān qì",
+    "example": "今天天气怎么样？(Hôm nay thời tiết thế nào?)",
+    "pronunciation": "Thiên chì",
+    "example_pronunciation": "Chin thiên thiên chì thẩn mơ yàng?",
+    "source": "chinese"
+  },
+  {
+    "front": "热",
+    "back": "Nóng",
+    "pinyin": "rè",
+    "example": "今天很热。(Hôm nay rất nóng.)",
+    "pronunciation": "Rề",
+    "example_pronunciation": "Chin thiên hẩn rề.",
+    "source": "chinese"
+  },
+  {
+    "front": "冷",
+    "back": "Lạnh",
+    "pinyin": "lěng",
+    "example": "冬天很冷。(Mùa đông rất lạnh.)",
+    "pronunciation": "Lẻng",
+    "example_pronunciation": "Đông thiên hẩn lẻng.",
+    "source": "chinese"
+  },
+  {
+    "front": "下雨",
+    "back": "Mưa",
+    "pinyin": "xià yǔ",
+    "example": "今天会下雨吗？(Hôm nay có mưa không?)",
+    "pronunciation": "Xia yủ",
+    "example_pronunciation": "Chin thiên huây xia yủ ma?",
+    "source": "chinese"
+  },
+  {
+    "front": "高兴",
+    "back": "Vui mừng",
+    "pinyin": "gāo xìng",
+    "example": "见到你很高兴。(Rất vui được gặp bạn.)",
+    "pronunciation": "Cao xing",
+    "example_pronunciation": "Chiền đào nỉ hẩn cao xing.",
+    "source": "chinese"
+  },
+  {
+    "front": "难过",
+    "back": "Buồn",
+    "pinyin": "nán guò",
+    "example": "他看起来很难过。(Anh ấy trông có vẻ buồn.)",
+    "pronunciation": "Nán quò",
+    "example_pronunciation": "Thă khàn chỉ lái hẩn nán quò.",
+    "source": "chinese"
+  },
+  {
+    "front": "累",
+    "back": "Mệt",
+    "pinyin": "lèi",
+    "example": "我今天很累。(Hôm nay tôi rất mệt.)",
+    "pronunciation": "Lây",
+    "example_pronunciation": "Uổ chin thiên hẩn lây.",
+    "source": "chinese"
+  },
+  {
+    "front": "忙",
+    "back": "Bận",
+    "pinyin": "máng",
+    "example": "最近很忙。(Dạo này rất bận.)",
+    "pronunciation": "Máng",
+    "example_pronunciation": "Truy chin hẩn máng.",
+    "source": "chinese"
+  },
+  {
+    "front": "重要",
+    "back": "Quan trọng",
+    "pinyin": "zhòng yào",
+    "example": "这件事很重要。(Việc này rất quan trọng.)",
+    "pronunciation": "Chung yào",
+    "example_pronunciation": "Chợ chiền sứ hẩn chung yào.",
+    "source": "chinese"
+  },
+  {
+    "front": "问题",
+    "back": "Vấn đề / Câu hỏi",
+    "pinyin": "wèn tí",
+    "example": "有问题请告诉我。(Có vấn đề gì hãy nói với tôi.)",
+    "pronunciation": "Uấn thí",
+    "example_pronunciation": "Yẩu uấn thí chỉng cao sủ uổ.",
+    "source": "chinese"
+  },
+  {
+    "front": "答案",
+    "back": "Câu trả lời",
+    "pinyin": "dá àn",
+    "example": "你知道答案吗？(Bạn có biết câu trả lời không?)",
+    "pronunciation": "Đá àn",
+    "example_pronunciation": "Nỉ chư đào đá àn ma?",
+    "source": "chinese"
+  },
+  {
+    "front": "帮助",
+    "back": "Giúp đỡ",
+    "pinyin": "bāng zhù",
+    "example": "谢谢你的帮助。(Cảm ơn sự giúp đỡ của bạn.)",
+    "pronunciation": "Băng chủ",
+    "example_pronunciation": "Siê siê nỉ đơ băng chủ.",
+    "source": "chinese"
+  },
+  {
+    "front": "需要",
+    "back": "Cần",
+    "pinyin": "xū yào",
+    "example": "你需要什么？(Bạn cần gì?)",
+    "pronunciation": "Xuy yào",
+    "example_pronunciation": "Nỉ xuy yào sấn mơ?",
+    "source": "chinese"
+  },
+  {
+    "front": "可以",
+    "back": "Có thể / Được",
+    "pinyin": "kě yǐ",
+    "example": "我可以帮你。(Tôi có thể giúp bạn.)",
+    "pronunciation": "Khỏ yi",
+    "example_pronunciation": "Uổ khỏ yi băng nỉ.",
+    "source": "chinese"
+  },
+  {
+    "front": "不可以",
+    "back": "Không được",
+    "pinyin": "bù kě yǐ",
+    "example": "这里不可以吸烟。(Ở đây không được hút thuốc.)",
+    "pronunciation": "Bù khỏ yi",
+    "example_pronunciation": "Chợ lỉ bù khỏ yi xi yên.",
+    "source": "chinese"
+  },
+  {
+    "front": "一起",
+    "back": "Cùng nhau",
+    "pinyin": "yī qǐ",
+    "example": "我们一起去吧。(Chúng ta cùng đi nhé.)",
+    "pronunciation": "Yi chỉ",
+    "example_pronunciation": "Uổ mơn yi chỉ chuy ba.",
+    "source": "chinese"
+  },
+  {
+    "front": "等一下",
+    "back": "Chờ một chút",
+    "pinyin": "děng yī xià",
+    "example": "等一下，我马上来。(Chờ một chút, tôi đến ngay.)",
+    "pronunciation": "Đẳng yi xia",
+    "example_pronunciation": "Đẳng yi xia, uổ mả sảng lái.",
+    "source": "chinese"
+  },
+  {
+    "front": "现在",
+    "back": "Bây giờ",
+    "pinyin": "xiàn zài",
+    "example": "现在几点？(Bây giờ là mấy giờ?)",
+    "pronunciation": "Xiền chài",
+    "example_pronunciation": "Xiền chài chỉ điẩn?",
+    "source": "chinese"
+  },
+  {
+    "front": "以后",
+    "back": "Sau này",
+    "pinyin": "yǐ hòu",
+    "example": "以后我们再聊。(Sau này chúng ta nói chuyện tiếp.)",
+    "pronunciation": "Yi hẩu",
+    "example_pronunciation": "Yi hẩu uổ mơn chài liào.",
+    "source": "chinese"
+  },
+  {
+    "front": "以前",
+    "back": "Trước đây",
+    "pinyin": "yǐ qián",
+    "example": "以前我住在河内。(Trước đây tôi sống ở Hà Nội.)",
+    "pronunciation": "Yi chiền",
+    "example_pronunciation": "Yi chiền uổ chủ chài hớ nây.",
+    "source": "chinese"
+  },
+  {
+    "front": "快乐",
+    "back": "hạnh phúc",
+    "pinyin": "kuài lè",
+    "example": "我很快乐 (tôi rất hạnh phúc)",
+    "pronunciation": "khuải lặc",
+    "example_pronunciation": "ngô vân khuải lặc",
+    "source": "chinese"
+  },
+  {
+    "front": "加油",
+    "back": "hỗ trợ, khích lệ",
+    "pinyin": "jiā yóu",
+    "example": "加油，你可以做到！(Cố lên, bạn có thể làm được!)",
+    "pronunciation": "gia yô",
+    "example_pronunciation": "gia yô, ni gia neng zuo dao!",
+    "source": "chinese"
+  },
+  {
+    "front": "是",
+    "back": "Là / phải",
+    "pinyin": "shì",
+    "example": "我是学生。(Tôi là học sinh.)",
+    "pronunciation": "Sư",
+    "example_pronunciation": "Uổ sư xuê sâng.",
+    "source": "chinese"
+  },
+  {
+    "front": "不是",
+    "back": "Không phải",
+    "pinyin": "bù shì",
+    "example": "这不是我的书。(Đây không phải sách của tôi.)",
+    "pronunciation": "Bú sư",
+    "example_pronunciation": "Giả bú sư uổ đơ sư.",
+    "source": "chinese"
+  },
+  {
+    "front": "有",
+    "back": "Có",
+    "pinyin": "yǒu",
+    "example": "我有一辆车。(Tôi có một chiếc xe hơi.)",
+    "pronunciation": "Dẩu",
+    "example_pronunciation": "Uổ dẩu yi lượng chưa.",
+    "source": "chinese"
+  },
+  {
+    "front": "没有",
+    "back": "Không có",
+    "pinyin": "méi yǒu",
+    "example": "我没有钱。(Tôi không có tiền.)",
+    "pronunciation": "Mấy dẩu",
+    "example_pronunciation": "Uổ mấy dẩu chiền.",
+    "source": "chinese"
+  },
+  {
+    "front": "要",
+    "back": "Muốn / cần",
+    "pinyin": "yào",
+    "example": "我要喝水。(Tôi muốn uống nước.)",
+    "pronunciation": "Dao",
+    "example_pronunciation": "Uổ dao hư thủy.",
+    "source": "chinese"
+  },
+  {
+    "front": "不要",
+    "back": "Không muốn",
+    "pinyin": "bù yào",
+    "example": "我不要咖啡。(Tôi không muốn cà phê.)",
+    "pronunciation": "Bú dao",
+    "example_pronunciation": "Uổ bú dao ka phây.",
+    "source": "chinese"
+  },
+  {
+    "front": "好",
+    "back": "Tốt / được",
+    "pinyin": "hǎo",
+    "example": "这个电影很好。(Bộ phim này rất hay.)",
+    "pronunciation": "Hảo",
+    "example_pronunciation": "Chưa cơ điên ỉn hẩn hảo.",
+    "source": "chinese"
+  },
+  {
+    "front": "不好",
+    "back": "Không tốt",
+    "pinyin": "bù hǎo",
+    "example": "今天天气不好。(Hôm nay thời tiết không tốt.)",
+    "pronunciation": "Bú hảo",
+    "example_pronunciation": "Chin thiên thiên chì bú hảo.",
+    "source": "chinese"
+  },
+  {
+    "front": "大",
+    "back": "Lớn / to",
+    "pinyin": "dà",
+    "example": "这个房间很大。(Căn phòng này rất lớn.)",
+    "pronunciation": "Tà",
+    "example_pronunciation": "Chưa cơ pháng chiên hẩn tà.",
+    "source": "chinese"
+  },
+  {
+    "front": "小",
+    "back": "Nhỏ",
+    "pinyin": "xiǎo",
+    "example": "这只猫很小。(Con mèo này rất nhỏ.)",
+    "pronunciation": "Xiảo",
+    "example_pronunciation": "Chưa chỉ mao hẩn xiảo.",
+    "source": "chinese"
+  },
+  {
+    "front": "多",
+    "back": "Nhiều",
+    "pinyin": "duō",
+    "example": "越南有很多美食。(Việt Nam có nhiều món ngon.)",
+    "pronunciation": "Tua",
+    "example_pronunciation": "Yua nàn dẩu hẩn tua mẩy sư.",
+    "source": "chinese"
+  },
+  {
+    "front": "少",
+    "back": "Ít",
+    "pinyin": "shǎo",
+    "example": "我很少喝酒。(Tôi rất ít uống rượu.)",
+    "pronunciation": "Xảo",
+    "example_pronunciation": "Uổ hẩn xảo hư chiủ.",
+    "source": "chinese"
+  },
+  {
+    "front": "长",
+    "back": "Dài",
+    "pinyin": "cháng",
+    "example": "这条河很长。(Con sông này rất dài.)",
+    "pronunciation": "Cháng",
+    "example_pronunciation": "Chưa thiếu hừ hẩn cháng.",
+    "source": "chinese"
+  },
+  {
+    "front": "短",
+    "back": "Ngắn",
+    "pinyin": "duǎn",
+    "example": "这裤子很短。(Cái quần này ngắn quá.)",
+    "pronunciation": "Toản",
+    "example_pronunciation": "Chưa khu chư hẩn toản.",
+    "source": "chinese"
+  },
+  {
+    "front": "高",
+    "back": "Cao",
+    "pinyin": "gāo",
+    "example": "他很高。(Anh ấy rất cao.)",
+    "pronunciation": "Cao",
+    "example_pronunciation": "Tha hẩn cao.",
+    "source": "chinese"
+  },
+  {
+    "front": "矮",
+    "back": "Thấp",
+    "pinyin": "ǎi",
+    "example": "我比他矮。(Tôi thấp hơn anh ấy.)",
+    "pronunciation": "Ải",
+    "example_pronunciation": "Uổ bỉ tha ải.",
+    "source": "chinese"
+  },
+  {
+    "front": "冷",
+    "back": "Lạnh",
+    "pinyin": "lěng",
+    "example": "今天很冷。(Hôm nay rất lạnh.)",
+    "pronunciation": "Lẩng",
+    "example_pronunciation": "Chin thiên hẩn lẩng.",
+    "source": "chinese"
+  },
+  {
+    "front": "热",
+    "back": "Nóng",
+    "pinyin": "rè",
+    "example": "夏天很热。(Mùa hè rất nóng.)",
+    "pronunciation": "Rứa",
+    "example_pronunciation": "Xia thiên hẩn rứa.",
+    "source": "chinese"
+  },
+  {
+    "front": "漂亮",
+    "back": "Đẹp",
+    "pinyin": "piào liang",
+    "example": "她真漂亮！(Cô ấy thật đẹp!)",
+    "pronunciation": "Piêu liêng",
+    "example_pronunciation": "Tha chân piêu liêng!",
+    "source": "chinese"
+  },
+  {
+    "front": "高兴",
+    "back": "Vui mừng",
+    "pinyin": "gāo xìng",
+    "example": "我很高兴见到你。(Tôi rất vui được gặp bạn.)",
+    "pronunciation": "Cao xinh",
+    "example_pronunciation": "Uổ hẩn cao xinh chiên đáo nỉ.",
+    "source": "chinese"
+  },
+  {
+    "front": "饿",
+    "back": "Đói",
+    "pinyin": "è",
+    "example": "我饿了。(Tôi đói rồi.)",
+    "pronunciation": "Ứa",
+    "example_pronunciation": "Uổ ứa lơ.",
+    "source": "chinese"
+  },
+  {
+    "front": "渴",
+    "back": "Khát",
+    "pinyin": "kě",
+    "example": "我很渴。(Tôi rất khát.)",
+    "pronunciation": "Khửa",
+    "example_pronunciation": "Uổ hẩn khửa.",
+    "source": "chinese"
+  },
+  {
+    "front": "累",
+    "back": "Mệt",
+    "pinyin": "lèi",
+    "example": "我工作很累。(Tôi làm việc rất mệt.)",
+    "pronunciation": "Lây",
+    "example_pronunciation": "Uổ công trố hẩn lây.",
+    "source": "chinese"
+  },
+  {
+    "front": "忙",
+    "back": "Bận",
+    "pinyin": "máng",
+    "example": "我很忙没有时间。(Tôi rất bận không có thời gian.)",
+    "pronunciation": "Máng",
+    "example_pronunciation": "Uổ hẩn máng mấy dẩu sư chiên.",
+    "source": "chinese"
+  },
+  {
+    "front": "新",
+    "back": "Mới",
+    "pinyin": "xīn",
+    "example": "我买了一件新衣服。(Tôi đã mua một cái áo mới.)",
+    "pronunciation": "Xin",
+    "example_pronunciation": "Uổ mải lơ yi chiên xin yi phu.",
+    "source": "chinese"
+  },
+  {
+    "front": "旧",
+    "back": "Cũ",
+    "pinyin": "jiù",
+    "example": "这台电脑很旧。(Máy tính này rất cũ.)",
+    "pronunciation": "Chiêu",
+    "example_pronunciation": "Chưa thai điên nảo hẩn chiêu.",
+    "source": "chinese"
+  },
+  {
+    "front": "快",
+    "back": "Nhanh",
+    "pinyin": "kuài",
+    "example": "请快一点！(Làm ơn nhanh một chút!)",
+    "pronunciation": "Khoái",
+    "example_pronunciation": "Chỉnh khoái yi điển!",
+    "source": "chinese"
+  },
+  {
+    "front": "慢",
+    "back": "Chậm",
+    "pinyin": "màn",
+    "example": "请说慢一点。(Vui lòng nói chậm một chút.)",
+    "pronunciation": "Màn",
+    "example_pronunciation": "Chỉnh sua màn yi điển.",
+    "source": "chinese"
+  },
+  {
+    "front": "早",
+    "back": "Sớm",
+    "pinyin": "zǎo",
+    "example": "早上好！(Chào buổi sáng!)",
+    "pronunciation": "Chảo",
+    "example_pronunciation": "Chảo sâng hảo!",
+    "source": "chinese"
+  },
+  {
+    "front": "晚",
+    "back": "Tối / muộn",
+    "pinyin": "wǎn",
+    "example": "晚安！(Chúc ngủ ngon!)",
+    "pronunciation": "Oản",
+    "example_pronunciation": "Oản an!",
+    "source": "chinese"
+  },
+  {
+    "front": "上",
+    "back": "Trên / lên",
+    "pinyin": "shàng",
+    "example": "上楼去。(Lên lầu.)",
+    "pronunciation": "Xạng",
+    "example_pronunciation": "Xạng lấu chuy.",
+    "source": "chinese"
+  },
+  {
+    "front": "下",
+    "back": "Dưới / xuống",
+    "pinyin": "xià",
+    "example": "下楼来。(Xuống lầu.)",
+    "pronunciation": "Xia",
+    "example_pronunciation": "Xia lấu lái.",
+    "source": "chinese"
+  },
+  {
+    "front": "里",
+    "back": "Trong / bên trong",
+    "pinyin": "lǐ",
+    "example": "我在房间里。(Tôi ở trong phòng.)",
+    "pronunciation": "Lỉ",
+    "example_pronunciation": "Uổ chài pháng chiên lỉ.",
+    "source": "chinese"
+  },
+  {
+    "front": "外",
+    "back": "Ngoài / bên ngoài",
+    "pinyin": "wài",
+    "example": "在外面等。(Đợi ở bên ngoài.)",
+    "pronunciation": "Oai",
+    "example_pronunciation": "Chài oai miện đẳng.",
+    "source": "chinese"
+  },
+  {
+    "front": "前",
+    "back": "Trước",
+    "pinyin": "qián",
+    "example": "在前面。(Ở phía trước.)",
+    "pronunciation": "Chiền",
+    "example_pronunciation": "Chài chiền miện.",
+    "source": "chinese"
+  },
+  {
+    "front": "后",
+    "back": "Sau",
+    "pinyin": "hòu",
+    "example": "在后面。(Ở phía sau.)",
+    "pronunciation": "Hẩu",
+    "example_pronunciation": "Chài hẩu miện.",
+    "source": "chinese"
+  },
+  {
+    "front": "左",
+    "back": "Trái",
+    "pinyin": "zuǒ",
+    "example": "左转。(Rẽ trái.)",
+    "pronunciation": "Chuổ",
+    "example_pronunciation": "Chuổ choản.",
+    "source": "chinese"
+  },
+  {
+    "front": "右",
+    "back": "Phải",
+    "pinyin": "yòu",
+    "example": "右转。(Rẽ phải.)",
+    "pronunciation": "Dâu",
+    "example_pronunciation": "Dâu choản.",
+    "source": "chinese"
+  },
+  {
+    "front": "中",
+    "back": "Giữa / trung",
+    "pinyin": "zhōng",
+    "example": "中间有张桌子。(Ở giữa có cái bàn.)",
+    "pronunciation": "Chung",
+    "example_pronunciation": "Chung chiên dẩu châng chua chư.",
+    "source": "chinese"
+  },
+  {
+    "front": "吃",
+    "back": "Ăn",
+    "pinyin": "chī",
+    "example": "我们一起吃饭吧。(Chúng ta cùng ăn cơm nhé.)",
+    "pronunciation": "Trư",
+    "example_pronunciation": "Uổ mơn yi chỉ chuy phan ba.",
+    "source": "chinese"
+  },
+  {
+    "front": "喝",
+    "back": "Uống",
+    "pinyin": "hē",
+    "example": "你想喝什么？(Bạn muốn uống gì?)",
+    "pronunciation": "Hưa",
+    "example_pronunciation": "Nỉ xiảng hưa thẩm mơ?",
+    "source": "chinese"
+  },
+  {
+    "front": "走",
+    "back": "Đi bộ",
+    "pinyin": "zǒu",
+    "example": "我们走吧！(Chúng ta đi thôi!)",
+    "pronunciation": "Chẩu",
+    "example_pronunciation": "Uổ mơn chẩu ba!",
+    "source": "chinese"
+  },
+  {
+    "front": "跑",
+    "back": "Chạy",
+    "pinyin": "pǎo",
+    "example": "他跑得很快。(Anh ấy chạy rất nhanh.)",
+    "pronunciation": "Phảo",
+    "example_pronunciation": "Tha phảo tợ hẩn khoái.",
+    "source": "chinese"
+  },
+  {
+    "front": "看",
+    "back": "Xem / nhìn",
+    "pinyin": "kàn",
+    "example": "看电视。(Xem ti vi.)",
+    "pronunciation": "Khàn",
+    "example_pronunciation": "Khàn điên sư.",
+    "source": "chinese"
+  },
+  {
+    "front": "听",
+    "back": "Nghe",
+    "pinyin": "tīng",
+    "example": "听音乐。(Nghe nhạc.)",
+    "pronunciation": "Thinh",
+    "example_pronunciation": "Thinh âm yua.",
+    "source": "chinese"
+  },
+  {
+    "front": "说",
+    "back": "Nói",
+    "pinyin": "shuō",
+    "example": "你会说中文吗？(Bạn có nói tiếng Trung không?)",
+    "pronunciation": "Sua",
+    "example_pronunciation": "Nỉ huây sua chung uấn ma?",
+    "source": "chinese"
+  },
+  {
+    "front": "读",
+    "back": "Đọc",
+    "pinyin": "dú",
+    "example": "请读这本书。(Hãy đọc cuốn sách này.)",
+    "pronunciation": "Tú",
+    "example_pronunciation": "Chỉnh tú chưa bẩn sư.",
+    "source": "chinese"
+  },
+  {
+    "front": "写",
+    "back": "Viết",
+    "pinyin": "xiě",
+    "example": "请写你的名字。(Hãy viết tên của bạn.)",
+    "pronunciation": "Xiể",
+    "example_pronunciation": "Chỉnh xiể nỉ đơ mính chư.",
+    "source": "chinese"
+  },
+  {
+    "front": "买",
+    "back": "Mua",
+    "pinyin": "mǎi",
+    "example": "我要买手机。(Tôi muốn mua điện thoại.)",
+    "pronunciation": "Mải",
+    "example_pronunciation": "Uổ dao mải sẩu chi.",
+    "source": "chinese"
+  },
+  {
+    "front": "卖",
+    "back": "Bán",
+    "pinyin": "mài",
+    "example": "这个店卖水果。(Cửa hàng này bán trái cây.)",
+    "pronunciation": "Mai",
+    "example_pronunciation": "Chưa cơ điên mai thủy quả.",
+    "source": "chinese"
+  },
+  {
+    "front": "开",
+    "back": "Mở",
+    "pinyin": "kāi",
+    "example": "请开门。(Làm ơn mở cửa.)",
+    "pronunciation": "Khai",
+    "example_pronunciation": "Chỉnh khai mấn.",
+    "source": "chinese"
+  },
+  {
+    "front": "关",
+    "back": "Đóng",
+    "pinyin": "guān",
+    "example": "请关门。(Làm ơn đóng cửa.)",
+    "pronunciation": "Quan",
+    "example_pronunciation": "Chỉnh quan mấn.",
+    "source": "chinese"
+  },
+  {
+    "front": "坐",
+    "back": "Ngồi",
+    "pinyin": "zuò",
+    "example": "请坐。(Mời ngồi.)",
+    "pronunciation": "Chua",
+    "example_pronunciation": "Chỉnh chua.",
+    "source": "chinese"
+  },
+  {
+    "front": "站",
+    "back": "Đứng",
+    "pinyin": "zhàn",
+    "example": "请站起来。(Mời đứng dậy.)",
+    "pronunciation": "Chàn",
+    "example_pronunciation": "Chỉnh chàn chỉ lái.",
+    "source": "chinese"
+  },
+  {
+    "front": "给",
+    "back": "Cho / tặng",
+    "pinyin": "gěi",
+    "example": "给我一本书。(Cho tôi một cuốn sách.)",
+    "pronunciation": "Cẩy",
+    "example_pronunciation": "Cẩy uổ yi bẩn sư.",
+    "source": "chinese"
+  },
+  {
+    "front": "用",
+    "back": "Dùng",
+    "pinyin": "yòng",
+    "example": "我用筷子吃饭。(Tôi dùng đũa để ăn cơm.)",
+    "pronunciation": "Dung",
+    "example_pronunciation": "Uổ dung khoái chư trư phan.",
+    "source": "chinese"
+  },
+  {
+    "front": "会",
+    "back": "Biết / có thể",
+    "pinyin": "huì",
+    "example": "我会游泳。(Tôi biết bơi.)",
+    "pronunciation": "Huây",
+    "example_pronunciation": "Uổ huây dâu dủng.",
+    "source": "chinese"
+  },
+  {
+    "front": "能",
+    "back": "Có thể",
+    "pinyin": "néng",
+    "example": "我能帮你吗？(Tôi có thể giúp bạn không?)",
+    "pronunciation": "Nấng",
+    "example_pronunciation": "Uổ nấng bang nỉ ma?",
+    "source": "chinese"
+  },
+  {
+    "front": "可以",
+    "back": "Được / có thể",
+    "pinyin": "kě yǐ",
+    "example": "我可以进来吗？(Tôi có thể vào không?)",
+    "pronunciation": "Khửa ỉ",
+    "example_pronunciation": "Uổ khửa ỉ chỉn lái ma?",
+    "source": "chinese"
+  },
+  {
+    "front": "知道",
+    "back": "Biết",
+    "pinyin": "zhī dào",
+    "example": "我知道这件事。(Tôi biết việc này.)",
+    "pronunciation": "Chư đao",
+    "example_pronunciation": "Uổ chư đao chưa chiên sư.",
+    "source": "chinese"
+  },
+  {
+    "front": "喜欢",
+    "back": "Thích",
+    "pinyin": "xǐ huān",
+    "example": "我喜欢你！(Tôi thích bạn!)",
+    "pronunciation": "Xỉ hoan",
+    "example_pronunciation": "Uổ xỉ hoan nỉ!",
+    "source": "chinese"
+  },
+  {
+    "front": "爱",
+    "back": "Yêu",
+    "pinyin": "ài",
+    "example": "我爱你。(Anh yêu em.)",
+    "pronunciation": "Ái",
+    "example_pronunciation": "Uổ ái nỉ.",
+    "source": "chinese"
+  },
+  {
+    "front": "想",
+    "back": "Muốn / nhớ",
+    "pinyin": "xiǎng",
+    "example": "我想去越南。(Tôi muốn đi Việt Nam.)",
+    "pronunciation": "Xiảng",
+    "example_pronunciation": "Uổ xiảng chuy yua nàn.",
+    "source": "chinese"
+  },
+  {
+    "front": "觉得",
+    "back": "Cảm thấy / nghĩ",
+    "pinyin": "jué de",
+    "example": "我觉得很好。(Tôi cảm thấy rất tốt.)",
+    "pronunciation": "Chúa tợ",
+    "example_pronunciation": "Uổ chúa tợ hẩn hảo.",
+    "source": "chinese"
+  },
+  {
+    "front": "应该",
+    "back": "Nên",
+    "pinyin": "yīng gāi",
+    "example": "你应该休息。(Bạn nên nghỉ ngơi.)",
+    "pronunciation": "Dinh cai",
+    "example_pronunciation": "Nỉ dinh cai siu xi.",
+    "source": "chinese"
+  },
+  {
+    "front": "必须",
+    "back": "Phải",
+    "pinyin": "bì xū",
+    "example": "你必须来。(Bạn phải đến.)",
+    "pronunciation": "Bi xuy",
+    "example_pronunciation": "Nỉ bi xuy lái.",
+    "source": "chinese"
+  },
+  {
+    "front": "可以",
+    "back": "Được phép",
+    "pinyin": "kě yǐ",
+    "example": "我可以问你一个问题吗？(Tôi có thể hỏi bạn một câu hỏi không?)",
+    "pronunciation": "Khửa ỉ",
+    "example_pronunciation": "Uổ khửa ỉ uấn nỉ yi cưa uấn đề ma?",
+    "source": "chinese"
+  },
+  {
+    "front": "再见",
+    "back": "Tạm biệt",
+    "pinyin": "zài jiàn",
+    "example": "明天再见！(Ngày mai gặp lại!)",
+    "pronunciation": "Chai chiên",
+    "example_pronunciation": "Minh thiên chai chiên!",
+    "source": "chinese"
+  },
+  {
+    "front": "手机",
+    "back": "Điện thoại di động",
+    "pinyin": "shǒu jī",
+    "example": "我的手机没电了。(Điện thoại của tôi hết pin rồi.)",
+    "pronunciation": "Sẩu chi",
+    "example_pronunciation": "Uổ đơ sẩu chi mấy điên lơ.",
+    "source": "chinese"
+  },
+  {
+    "front": "电脑",
+    "back": "Máy tính",
+    "pinyin": "diàn nǎo",
+    "example": "这台电脑很贵。(Máy tính này rất đắt.)",
+    "pronunciation": "Điên nảo",
+    "example_pronunciation": "Chưa thai điên nảo hẩn quây.",
+    "source": "chinese"
+  },
+  {
+    "front": "电话",
+    "back": "Điện thoại",
+    "pinyin": "diàn huà",
+    "example": "给我打电话。(Gọi điện thoại cho tôi.)",
+    "pronunciation": "Điên hoa",
+    "example_pronunciation": "Cẩy uổ điển hoa.",
+    "source": "chinese"
+  },
+  {
+    "front": "家",
+    "back": "Nhà",
+    "pinyin": "jiā",
+    "example": "回家。(Về nhà.)",
+    "pronunciation": "Chia",
+    "example_pronunciation": "Huây chia.",
+    "source": "chinese"
+  },
+  {
+    "front": "学校",
+    "back": "Trường học",
+    "pinyin": "xué xiào",
+    "example": "我去学校。(Tôi đi học.)",
+    "pronunciation": "Xuyê xiao",
+    "example_pronunciation": "Uổ chuy xuyê xiao.",
+    "source": "chinese"
+  },
+  {
+    "front": "医院",
+    "back": "Bệnh viện",
+    "pinyin": "yī yuàn",
+    "example": "我去医院。(Tôi đi bệnh viện.)",
+    "pronunciation": "Yi duên",
+    "example_pronunciation": "Uổ chuy yi duên.",
+    "source": "chinese"
+  },
+  {
+    "front": "商店",
+    "back": "Cửa hàng",
+    "pinyin": "shāng diàn",
+    "example": "这家商店很大。(Cửa hàng này rất lớn.)",
+    "pronunciation": "Xạng điên",
+    "example_pronunciation": "Chưa chia xạng điên hẩn tà.",
+    "source": "chinese"
+  },
+  {
+    "front": "车站",
+    "back": "Nhà ga / bến xe",
+    "pinyin": "chē zhàn",
+    "example": "车站在哪里？(Bến xe ở đâu?)",
+    "pronunciation": "Chưa chàn",
+    "example_pronunciation": "Chưa chàn chài nả lỉ?",
+    "source": "chinese"
+  },
+  {
+    "front": "飞机",
+    "back": "Máy bay",
+    "pinyin": "fēi jī",
+    "example": "我坐飞机去。(Tôi đi máy bay.)",
+    "pronunciation": "Phây chi",
+    "example_pronunciation": "Uổ chua phây chi chuy.",
+    "source": "chinese"
+  },
+  {
+    "front": "钱",
+    "back": "Tiền",
+    "pinyin": "qián",
+    "example": "我没有钱。(Tôi không có tiền.)",
+    "pronunciation": "Chiền",
+    "example_pronunciation": "Uổ mấy dẩu chiền.",
+    "source": "chinese"
+  },
+  {
+    "front": "朋友",
+    "back": "Bạn bè",
+    "pinyin": "péng yǒu",
+    "example": "他是我的朋友。(Anh ấy là bạn tôi.)",
+    "pronunciation": "Phấng dẩu",
+    "example_pronunciation": "Tha sư uổ đơ phấng dẩu.",
+    "source": "chinese"
+  },
+  {
+    "front": "名字",
+    "back": "Tên",
+    "pinyin": "míng zì",
+    "example": "你叫什么名字？(Bạn tên là gì?)",
+    "pronunciation": "Mính chư",
+    "example_pronunciation": "Nỉ chiêu thẩm mơ mính chư?",
+    "source": "chinese"
+  },
+  {
+    "front": "天气",
+    "back": "Thời tiết",
+    "pinyin": "tiān qì",
+    "example": "今天天气真好。(Hôm nay thời tiết thật đẹp.)",
+    "pronunciation": "Thiên chì",
+    "example_pronunciation": "Chin thiên thiên chì chân hảo.",
+    "source": "chinese"
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "enabled_sources": [
+    "english",
+    "chinese"
+  ],
+  "audio_enabled": true,
+  "auto_start": false,
+  "default_interval": 1,
+  "desktop_widget_enabled": true,
+  "widget_interval_minutes": 2,
+  "widget_pos": [
+    2587,
+    1243
+  ],
+  "widget_size": [
+    460,
+    460
+  ],
+  "groq_api_key": "",
+  "_da_bao_thu_gon": true
+}
